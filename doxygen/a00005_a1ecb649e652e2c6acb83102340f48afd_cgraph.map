@@ -1,0 +1,9 @@
+<map id="nnp::Dataset::distributeStructures" name="nnp::Dataset::distributeStructures">
+<area shape="rect" id="node2" href="$a00005.html#aed1852f4390b8b97e62f697ee4b16676" title="Get number of structures in data file. " alt="" coords="212,5,423,32"/>
+<area shape="rect" id="node3" href="$a00023.html#aaa794cf49a53d8e5db578ac303b700fd" title="Read configuration from file. " alt="" coords="223,56,411,83"/>
+<area shape="rect" id="node4" href="$a00005.html#a57630554119a518ecb32d5e1f327256f" title="Receive one structure from source process. " alt="" coords="226,107,409,133"/>
+<area shape="rect" id="node5" href="$a00013.html#aa8ddf0701dbcd60868955ca556892bc5" title="nnp::Mode::removeEnergyOffset" alt="" coords="212,157,423,184"/>
+<area shape="rect" id="node6" href="$a00005.html#a00880129c0df561598261da677a55055" title="Send one structure to destination process. " alt="" coords="224,208,411,235"/>
+<area shape="rect" id="node7" href="$a00023.html#a57c375126ca37e8d390d406091e7dd5a" title="Set element map of structure. " alt="" coords="216,259,419,285"/>
+<area shape="rect" id="node8" href="$a00126.html#a398f0bcafb57e99ba1581c4b8f8a7f76" title="String version of printf function. " alt="" coords="279,309,356,336"/>
+</map>

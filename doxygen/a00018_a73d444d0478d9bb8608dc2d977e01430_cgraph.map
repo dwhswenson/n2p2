@@ -1,0 +1,9 @@
+<map id="LAMMPS_NS::PairNNP::compute" name="LAMMPS_NS::PairNNP::compute">
+<area shape="rect" id="node2" href="$a00009.html#a7ed444953da9efb4f60e4fee9e9718d7" title="Return energy contribution of one atom. " alt="" coords="241,5,393,47"/>
+<area shape="rect" id="node3" href="$a00009.html#ac28ecc14ef03e4ae18cea7ab4ce7ccbe" title="Return sum of local energy contributions. " alt="" coords="241,71,393,112"/>
+<area shape="rect" id="node4" href="$a00009.html#a05566cf6937640ce8c69f92cc62619a6" title="Calculate forces and add to LAMMPS atomic force arrays. " alt="" coords="241,136,393,177"/>
+<area shape="rect" id="node5" href="$a00018.html#a31e9057e2529ee8a779496358dcbd4f8" title="LAMMPS_NS::PairNNP\l::handleExtrapolationWarnings" alt="" coords="217,201,416,243"/>
+<area shape="rect" id="node6" href="$a00009.html#a0837984fb5d6fe14d298bb2c0b7d01f2" title="Calculate symmetry functions, atomic neural networks and sum of local energy contributions. " alt="" coords="241,267,393,308"/>
+<area shape="rect" id="node7" href="$a00009.html#a28d41810dc652d5cdf1db90035e8d495" title="(Re)set structure to contain only local LAMMPS atoms. " alt="" coords="241,332,393,373"/>
+<area shape="rect" id="node8" href="$a00018.html#acf669a26f3d9863a65033e0703d462ee" title="LAMMPS_NS::PairNNP\l::transferNeighborList" alt="" coords="235,397,399,439"/>
+</map>

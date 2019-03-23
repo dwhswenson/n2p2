@@ -1,0 +1,8 @@
+<map id="nnp::Training::calculateWeightDerivatives" name="nnp::Training::calculateWeightDerivatives">
+<area shape="rect" id="node2" href="$a00015.html#a2427c73c34270f3a56ff8b54fd1d0969" title="Calculate &quot;second&quot; derivative of output with respect to connections. " alt="" coords="243,5,381,47"/>
+<area shape="rect" id="node3" href="$a00013.html#a8aec6fb4708b93b93a9cfa0e8045f955" title="Calculate all symmetry function groups for all atoms in given structure. " alt="" coords="211,71,413,112"/>
+<area shape="rect" id="node4" href="$a00013.html#add11e3c30eb86aba38d8239d1e5d8736" title="Calculate all symmetry functions for all atoms in given structure. " alt="" coords="211,136,413,177"/>
+<area shape="rect" id="node5" href="$a00015.html#af17851b6b0fe441710e246ca61851fce" title="Get neural network output layer node values. " alt="" coords="243,201,381,243"/>
+<area shape="rect" id="node6" href="$a00015.html#a9d2a2d332c23876935e3a3272f40f5c2" title="Propagate input information through all layers. " alt="" coords="243,267,381,308"/>
+<area shape="rect" id="node7" href="$a00015.html#a4505dd3b387aa71eaa97c4935a7c3798" title="Set neural network input layer node values. " alt="" coords="243,332,381,373"/>
+</map>

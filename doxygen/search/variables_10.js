@@ -1,0 +1,22 @@
+var searchData=
+[
+  ['r',['r',['../a00002.html#a0e8397ecd8e60cf9db1f4dfe7378d447',1,'nnp::Atom::r()'],['../a00040.html#a4edaddb021629424003223c131f44d6d',1,'nnp::Vec3D::r()']]],
+  ['rc',['rc',['../a00014.html#a3328aba160956a1fc4f976513cca025b',1,'nnp::Atom::Neighbor::rc()'],['../a00004.html#aa24d2dec5b988c0d4d0c575de30387b4',1,'nnp::CutoffFunction::rc()'],['../a00024.html#acf86a051fd0aa886842a6e1cb696ea33',1,'nnp::SymmetryFunction::rc()'],['../a00027.html#a50cff769774659b92be17b39db191e7d',1,'nnp::SymmetryFunctionGroup::rc()']]],
+  ['rci',['rci',['../a00004.html#a0cfa150a9bdccd7069db2658c6476fcd',1,'nnp::CutoffFunction']]],
+  ['rcinv',['rcinv',['../a00004.html#a3b49fe0d0a23564e793c4870326e9189',1,'nnp::CutoffFunction']]],
+  ['reapeatedenergyupdates',['reapeatedEnergyUpdates',['../a00037.html#a2c9b72725f426708f74649dd6cdd065d',1,'nnp::Training']]],
+  ['requesth',['requestH',['../a00010.html#a62973a33320da8d039b51acb43fa339e',1,'nnp::KalmanFilter']]],
+  ['requestxi',['requestXi',['../a00010.html#af5d30b52652f5791304d88bb65b6d149',1,'nnp::KalmanFilter']]],
+  ['resetew',['resetew',['../a00009.html#a7d53a23dedee7f177c33e015ac5cabe6',1,'nnp::InterfaceLammps::resetew()'],['../a00018.html#a60a86e0d39210c4f90ba0e1f8af20bd3',1,'LAMMPS_NS::PairNNP::resetew()']]],
+  ['reversemap',['reverseMap',['../a00007.html#a3ca5228c68df8f79b47532adf5c1f6f3',1,'nnp::ElementMap']]],
+  ['rmseenergiestest',['rmseEnergiesTest',['../a00037.html#a1324b5809246f19fb495bbfd41aca702',1,'nnp::Training']]],
+  ['rmseenergiestrain',['rmseEnergiesTrain',['../a00037.html#a9f6f8b773d7060afaa53e8b2d96869d2',1,'nnp::Training']]],
+  ['rmseforcestest',['rmseForcesTest',['../a00037.html#af681c45899d95b758df12960f22c6064',1,'nnp::Training']]],
+  ['rmseforcestrain',['rmseForcesTrain',['../a00037.html#aa8686a8f143a748159d7504ede28245a',1,'nnp::Training']]],
+  ['rmsethresholdenergy',['rmseThresholdEnergy',['../a00037.html#aad707e56a4d97382e674a31c48bae7b6',1,'nnp::Training']]],
+  ['rmsethresholdforce',['rmseThresholdForce',['../a00037.html#abf87e96644a2f87dd401683783a262dc',1,'nnp::Training']]],
+  ['rmsethresholdtrials',['rmseThresholdTrials',['../a00037.html#a177de8ee0c860a316e93b28e5f225a52',1,'nnp::Training']]],
+  ['rng',['rng',['../a00005.html#a1e39dc46c8015f4dbe34010b0d7a5648',1,'nnp::Dataset']]],
+  ['rngglobal',['rngGlobal',['../a00005.html#ae35949dc7242a6e2f5e81885e737e38f',1,'nnp::Dataset']]],
+  ['rs',['rs',['../a00025.html#ad91b6ce65fab1dca7948a075e13075d3',1,'nnp::SymmetryFunctionAngularNarrow::rs()'],['../a00026.html#a1670f3e8eb02a6d6bbcc2169d9111585',1,'nnp::SymmetryFunctionAngularWide::rs()'],['../a00028.html#abf19a77de6a372e35bb5071cdb01d40f',1,'nnp::SymmetryFunctionGroupAngularNarrow::rs()'],['../a00029.html#aa2a167645985b6ae3c2dfcd99d8c3c69',1,'nnp::SymmetryFunctionGroupAngularWide::rs()'],['../a00030.html#a04d6471b12db4077d3444d96be53a021',1,'nnp::SymmetryFunctionGroupRadial::rs()'],['../a00031.html#a8bf50912d170de66ee8dabedb5cb9d30',1,'nnp::SymmetryFunctionGroupWeightedAngular::rs()'],['../a00032.html#aa8181c54eca2f63074e627967a4b0a48',1,'nnp::SymmetryFunctionGroupWeightedRadial::rs()'],['../a00033.html#aef2fe59aa3f6ce92401f8b3f7d306f0a',1,'nnp::SymmetryFunctionRadial::rs()'],['../a00035.html#a1ef29b727980160b4e24ed15b68396c1',1,'nnp::SymmetryFunctionWeightedAngular::rs()'],['../a00036.html#acef111eacf4ce074a6d5f424232506a8',1,'nnp::SymmetryFunctionWeightedRadial::rs()']]]
+];

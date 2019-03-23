@@ -1,0 +1,13 @@
+.. _exhale_function_namespacennp_1add3921642f5fb87032bc304d36bb64b3:
+
+Function nnp::pad(std::string const&, std::size_t, char, bool)
+==============================================================
+
+- Defined in :ref:`file__home_travis_build_CompPhysVienna_n2p2_src_libnnp_utility.h`
+
+
+Function Documentation
+----------------------
+
+
+.. doxygenfunction:: nnp::pad(std::string const&, std::size_t, char, bool)

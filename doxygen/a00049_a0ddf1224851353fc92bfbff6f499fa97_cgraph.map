@@ -1,0 +1,24 @@
+<map id="main" name="main">
+<area shape="rect" id="node2" href="$a00005.html#ac5befcefcaf506b1fa23a4f6fd9302f3" title="Calculate buffer size required to communicate structure via MPI. " alt="" coords="104,5,323,32"/>
+<area shape="rect" id="node3" href="$a00013.html#a8aec6fb4708b93b93a9cfa0e8045f955" title="Calculate all symmetry function groups for all atoms in given structure. " alt="" coords="112,57,315,98"/>
+<area shape="rect" id="node4" href="$a00126.html#a398f0bcafb57e99ba1581c4b8f8a7f76" title="String version of printf function. " alt="" coords="371,764,448,791"/>
+<area shape="rect" id="node5" href="$a00013.html#add11e3c30eb86aba38d8239d1e5d8736" title="Calculate all symmetry functions for all atoms in given structure. " alt="" coords="112,174,315,215"/>
+<area shape="rect" id="node6" href="$a00005.html#a1a204e7dc1bdf91a515b18a0ef06704c" title="Collect symmetry function statistics from all processors. " alt="" coords="112,239,315,281"/>
+<area shape="rect" id="node7" href="$a00005.html#a1ecb649e652e2c6acb83102340f48afd" title="Read data file and distribute structures among processors. " alt="" coords="134,305,293,346"/>
+<area shape="rect" id="node8" href="$a00013.html#ac6cb3c7eb435bd9fc34e8ce3fe581a2d" title="Getter for Mode::maxCutoffRadius. " alt="" coords="108,371,319,397"/>
+<area shape="rect" id="node9" href="$a00013.html#a19a68b9d8750ddc0b440b1828ecf9f17" title="Write welcome message with version information. " alt="" coords="144,421,283,448"/>
+<area shape="rect" id="node10" href="$a00013.html#ae8ca16789e7794309cf9931e58eb882b" title="Open settings file and load all keywords into memory. " alt="" coords="121,472,305,499"/>
+<area shape="rect" id="node11" href="$a00012.html#a80b248cc27c7846814fb2915e198b71b" title="Register new C++ ofstream pointer. " alt="" coords="131,523,296,565"/>
+<area shape="rect" id="node12" href="$a00013.html#aadf28056284a518df974551358e2448e" title="Check if keyword was found in settings file. " alt="" coords="119,589,307,630"/>
+<area shape="rect" id="node13" href="$a00013.html#adffbed0cbae8bc9c4f4c4556ff113b5f" title="Combine multiple setup routines and provide a basic NNP setup. " alt="" coords="129,655,297,681"/>
+<area shape="rect" id="node14" href="$a00005.html#a93a93358a8303c618562487729450455" title="Initialize MPI with MPI_COMM_WORLD. " alt="" coords="133,705,294,732"/>
+<area shape="rect" id="node15" href="$a00005.html#abd84c06c5a83789ebe6a3ef8075af632" title="Initialize random number generator. " alt="" coords="120,757,307,798"/>
+<area shape="rect" id="node16" href="$a00013.html#a9a672cac54995b226d8e69bb8be2669d" title="Set up &quot;empy&quot; symmetry function scaling. " alt="" coords="122,822,305,863"/>
+<area shape="rect" id="node17" href="$a00013.html#ae4b348e9b5e2ef89cb30c760bdb55153" title="Set up symmetry function statistics collection. " alt="" coords="122,887,305,929"/>
+<area shape="rect" id="node18" href="$a00005.html#affe9632070e632592b6f3d78e4529d3a" title="Switch all structures to normalized units. " alt="" coords="122,953,305,994"/>
+<area shape="rect" id="node19" href="$a00013.html#a26f1d5cc36b1f1adf4a05a10ae8d161f" title="Check if normalization is enabled. " alt="" coords="117,1019,309,1045"/>
+<area shape="rect" id="node20" href="$a00005.html#afbdec01079adc087d702d5e7fddf2494" title="Calculate and write neighbor histogram. " alt="" coords="121,1070,306,1111"/>
+<area shape="rect" id="node21" href="$a00005.html#aa12823183030d6cff2e059e860d15671" title="Write symmetry function legacy file (&quot;function.data&quot;). " alt="" coords="117,1135,310,1177"/>
+<area shape="rect" id="node22" href="$a00005.html#abb4a2760ca7eb9c03e2ea37474a431c0" title="Calculate and write symmetry function histograms. " alt="" coords="117,1201,310,1242"/>
+<area shape="rect" id="node23" href="$a00005.html#a1623c2ddd9e673d12586e067ae536cc8" title="Write symmetry function scaling values to file. " alt="" coords="117,1266,310,1307"/>
+</map>

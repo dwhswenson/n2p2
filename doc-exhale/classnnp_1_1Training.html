@@ -1,0 +1,1039 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Class Training &mdash; n2p2 - A neural network potential package 1.0.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script type="text/javascript" src="../_static/collapsible-lists/js/CollapsibleLists.compressed.js"></script>
+        <script type="text/javascript" src="../_static/collapsible-lists/js/apply-collapsible-lists.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/collapsible-lists/css/tree_view.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Class Updater" href="classnnp_1_1Updater.html" />
+    <link rel="prev" title="Class SymmetryFunctionWeightedRadial" href="classnnp_1_1SymmetryFunctionWeightedRadial.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> n2p2 - A neural network potential package
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="../index.html">Overview</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Topics</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Topics/descriptors.html">Atomic environment descriptors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Topics/keywords.html">NNP configuration: keywords</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Topics/cfg_file.html">Configuration file format</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Topics/if_lammps.html">LAMMPS NNP interface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Topics/pair_nnp.html">LAMMPS NNP pair style</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Topics/training.html">NNP training procedure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Topics/units.html">Units</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Tools</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../Tools/libnnp.html">The libnnp core library</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Tools/nnp-convert.html">nnp-convert</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Tools/nnp-norm.html">nnp-norm</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Tools/nnp-predict.html">nnp-predict</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Tools/nnp-prune.html">nnp-prune</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Tools/nnp-select.html">nnp-select</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../Tools/nnp-scaling.html">nnp-scaling</a></li>
+</ul>
+<p class="caption"><span class="caption-text">API</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="root.html">n2p2 code documentation</a></li>
+</ul>
+<p class="caption"><span class="caption-text">About</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../About/authors.html">Authors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../About/license.html">License</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../About/changelog.html">Changelog</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">n2p2 - A neural network potential package</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="root.html">n2p2 code documentation</a> &raquo;</li>
+        
+      <li>Class Training</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/doc-exhale/classnnp_1_1Training.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="class-training">
+<span id="exhale-class-classnnp-1-1training"></span><h1>Class Training<a class="headerlink" href="#class-training" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li>Defined in <a class="reference internal" href="file__home_travis_build_CompPhysVienna_n2p2_src_libnnptrain_Training.h.html#file-home-travis-build-compphysvienna-n2p2-src-libnnptrain-training-h"><span class="std std-ref">File Training.h</span></a></li>
+</ul>
+<div class="section" id="nested-relationships">
+<h2>Nested Relationships<a class="headerlink" href="#nested-relationships" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="nested-types">
+<h3>Nested Types<a class="headerlink" href="#nested-types" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><a class="reference internal" href="structnnp_1_1Training_1_1UpdateCandidate.html#exhale-struct-structnnp-1-1training-1-1updatecandidate"><span class="std std-ref">Struct Training::UpdateCandidate</span></a></li>
+</ul>
+</div>
+</div>
+<div class="section" id="inheritance-relationships">
+<h2>Inheritance Relationships<a class="headerlink" href="#inheritance-relationships" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="base-type">
+<h3>Base Type<a class="headerlink" href="#base-type" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><code class="docutils literal notranslate"><span class="pre">public</span> <span class="pre">nnp::Dataset</span></code> (<a class="reference internal" href="classnnp_1_1Dataset.html#exhale-class-classnnp-1-1dataset"><span class="std std-ref">Class Dataset</span></a>)</li>
+</ul>
+</div>
+</div>
+<div class="section" id="class-documentation">
+<h2>Class Documentation<a class="headerlink" href="#class-documentation" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="_CPPv4N3nnp8TrainingE">
+<span id="_CPPv3N3nnp8TrainingE"></span><span id="_CPPv2N3nnp8TrainingE"></span><span id="nnp::Training"></span><span class="target" id="classnnp_1_1Training"></span><em class="property">class </em><code class="descname">Training</code> : <em class="property">public</em> nnp::<a class="reference internal" href="classnnp_1_1Dataset.html#_CPPv4N3nnp7DatasetE" title="nnp::Dataset">Dataset</a><a class="headerlink" href="#_CPPv4N3nnp8TrainingE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p><a class="reference internal" href="#classnnp_1_1Training"><span class="std std-ref">Training</span></a> methods. </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Types</p>
+<dl class="enum">
+<dt id="_CPPv4N3nnp8Training11UpdaterTypeE">
+<span id="_CPPv3N3nnp8Training11UpdaterTypeE"></span><span id="_CPPv2N3nnp8Training11UpdaterTypeE"></span><span class="target" id="classnnp_1_1Training_1a639e7546c166a0b5530ad707e08f626e"></span><em class="property">enum </em><code class="descname">UpdaterType</code><a class="headerlink" href="#_CPPv4N3nnp8Training11UpdaterTypeE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Type of update routine. </p>
+<p><em>Values:</em></p>
+<dl class="enumerator">
+<dt id="_CPPv4N3nnp8Training18UT_GRADIENTDESCENTE">
+<span id="_CPPv3N3nnp8Training18UT_GRADIENTDESCENTE"></span><span id="_CPPv2N3nnp8Training18UT_GRADIENTDESCENTE"></span><span class="target" id="classnnp_1_1Training_1a639e7546c166a0b5530ad707e08f626eaa67f1be8b3dac57ac031b64b3968a2f4"></span><code class="descname">UT_GRADIENTDESCENT</code><a class="headerlink" href="#_CPPv4N3nnp8Training18UT_GRADIENTDESCENTE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Simple gradient descent methods. </p>
+</dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N3nnp8Training15UT_KALMANFILTERE">
+<span id="_CPPv3N3nnp8Training15UT_KALMANFILTERE"></span><span id="_CPPv2N3nnp8Training15UT_KALMANFILTERE"></span><span class="target" id="classnnp_1_1Training_1a639e7546c166a0b5530ad707e08f626ea869bcad5a5278bb2a92adfb8ad07ef00"></span><code class="descname">UT_KALMANFILTER</code><a class="headerlink" href="#_CPPv4N3nnp8Training15UT_KALMANFILTERE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Kalman filter-based methods. </p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="enum">
+<dt id="_CPPv4N3nnp8Training12ParallelModeE">
+<span id="_CPPv3N3nnp8Training12ParallelModeE"></span><span id="_CPPv2N3nnp8Training12ParallelModeE"></span><span class="target" id="classnnp_1_1Training_1a6671e3eb01b86af1162273218df0e5ed"></span><em class="property">enum </em><code class="descname">ParallelMode</code><a class="headerlink" href="#_CPPv4N3nnp8Training12ParallelModeE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Parallel modes available for <a class="reference internal" href="#classnnp_1_1Training"><span class="std std-ref">Training</span></a>. </p>
+<p><em>Values:</em></p>
+<dl class="enumerator">
+<dt id="_CPPv4N3nnp8Training9PM_SERIALE">
+<span id="_CPPv3N3nnp8Training9PM_SERIALE"></span><span id="_CPPv2N3nnp8Training9PM_SERIALE"></span><span class="target" id="classnnp_1_1Training_1a6671e3eb01b86af1162273218df0e5edaff3062bc481d4142fb7f1aa3f80ee0e5"></span><code class="descname">PM_SERIAL</code><a class="headerlink" href="#_CPPv4N3nnp8Training9PM_SERIALE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>No parallel training, serial updates only. </p>
+</dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N3nnp8Training8PM_MSEKFE">
+<span id="_CPPv3N3nnp8Training8PM_MSEKFE"></span><span id="_CPPv2N3nnp8Training8PM_MSEKFE"></span><span class="target" id="classnnp_1_1Training_1a6671e3eb01b86af1162273218df0e5eda9916a976bfc8278f24617638b9434cff"></span><code class="descname">PM_MSEKF</code><a class="headerlink" href="#_CPPv4N3nnp8Training8PM_MSEKFE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Multi-stream Kalman filter training, all MPI tasks update weights. </p>
+</dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N3nnp8Training10PM_MSEKFNBE">
+<span id="_CPPv3N3nnp8Training10PM_MSEKFNBE"></span><span id="_CPPv2N3nnp8Training10PM_MSEKFNBE"></span><span class="target" id="classnnp_1_1Training_1a6671e3eb01b86af1162273218df0e5edac1d936ee10d566da3d68f6e51961ca3c"></span><code class="descname">PM_MSEKFNB</code><a class="headerlink" href="#_CPPv4N3nnp8Training10PM_MSEKFNBE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Multi-stream Kalman filter training, non-blocking communication. </p>
+</dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N3nnp8Training10PM_MSEKFR0E">
+<span id="_CPPv3N3nnp8Training10PM_MSEKFR0E"></span><span id="_CPPv2N3nnp8Training10PM_MSEKFR0E"></span><span class="target" id="classnnp_1_1Training_1a6671e3eb01b86af1162273218df0e5eda250f20294b4fa9637c3384f4227dd977"></span><code class="descname">PM_MSEKFR0</code><a class="headerlink" href="#_CPPv4N3nnp8Training10PM_MSEKFR0E" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Multi-stream Kalman filter training, update only at MPI rank 0. </p>
+</dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N3nnp8Training12PM_MSEKFR0PXE">
+<span id="_CPPv3N3nnp8Training12PM_MSEKFR0PXE"></span><span id="_CPPv2N3nnp8Training12PM_MSEKFR0PXE"></span><span class="target" id="classnnp_1_1Training_1a6671e3eb01b86af1162273218df0e5edace57d96f8c21924a89aa5d5a684e542a"></span><code class="descname">PM_MSEKFR0PX</code><a class="headerlink" href="#_CPPv4N3nnp8Training12PM_MSEKFR0PXE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Multi-stream Kalman filter training, update rank 0, precalc X. </p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="enum">
+<dt id="_CPPv4N3nnp8Training14UpdateStrategyE">
+<span id="_CPPv3N3nnp8Training14UpdateStrategyE"></span><span id="_CPPv2N3nnp8Training14UpdateStrategyE"></span><span class="target" id="classnnp_1_1Training_1ad641fa6c3bd89c5c3efd964c9a47429a"></span><em class="property">enum </em><code class="descname">UpdateStrategy</code><a class="headerlink" href="#_CPPv4N3nnp8Training14UpdateStrategyE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Update strategies available for <a class="reference internal" href="#classnnp_1_1Training"><span class="std std-ref">Training</span></a>. </p>
+<p><em>Values:</em></p>
+<dl class="enumerator">
+<dt id="_CPPv4N3nnp8Training11US_COMBINEDE">
+<span id="_CPPv3N3nnp8Training11US_COMBINEDE"></span><span id="_CPPv2N3nnp8Training11US_COMBINEDE"></span><span class="target" id="classnnp_1_1Training_1ad641fa6c3bd89c5c3efd964c9a47429aa0707d216983363dba3236106dfc85ec2"></span><code class="descname">US_COMBINED</code><a class="headerlink" href="#_CPPv4N3nnp8Training11US_COMBINEDE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>One combined updater for all elements. </p>
+</dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N3nnp8Training10US_ELEMENTE">
+<span id="_CPPv3N3nnp8Training10US_ELEMENTE"></span><span id="_CPPv2N3nnp8Training10US_ELEMENTE"></span><span class="target" id="classnnp_1_1Training_1ad641fa6c3bd89c5c3efd964c9a47429aa876e8890dda60cc514658d0aaf1db4cf"></span><code class="descname">US_ELEMENT</code><a class="headerlink" href="#_CPPv4N3nnp8Training10US_ELEMENTE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Separate updaters for individual elements. </p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="enum">
+<dt id="_CPPv4N3nnp8Training13SelectionModeE">
+<span id="_CPPv3N3nnp8Training13SelectionModeE"></span><span id="_CPPv2N3nnp8Training13SelectionModeE"></span><span class="target" id="classnnp_1_1Training_1a79df98867453f340a4cea8a9e432be98"></span><em class="property">enum </em><code class="descname">SelectionMode</code><a class="headerlink" href="#_CPPv4N3nnp8Training13SelectionModeE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>How update candidates are selected during <a class="reference internal" href="#classnnp_1_1Training"><span class="std std-ref">Training</span></a>. </p>
+<p><em>Values:</em></p>
+<dl class="enumerator">
+<dt id="_CPPv4N3nnp8Training9SM_RANDOME">
+<span id="_CPPv3N3nnp8Training9SM_RANDOME"></span><span id="_CPPv2N3nnp8Training9SM_RANDOME"></span><span class="target" id="classnnp_1_1Training_1a79df98867453f340a4cea8a9e432be98a38d533d5bcbf5f303309afa61b8eb429"></span><code class="descname">SM_RANDOM</code><a class="headerlink" href="#_CPPv4N3nnp8Training9SM_RANDOME" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Select candidates randomly. </p>
+</dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N3nnp8Training7SM_SORTE">
+<span id="_CPPv3N3nnp8Training7SM_SORTE"></span><span id="_CPPv2N3nnp8Training7SM_SORTE"></span><span class="target" id="classnnp_1_1Training_1a79df98867453f340a4cea8a9e432be98abd8af4b4dae6d18a6d3a2be8927fc367"></span><code class="descname">SM_SORT</code><a class="headerlink" href="#_CPPv4N3nnp8Training7SM_SORTE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Sort candidates according to their RMSE and pick worst first. </p>
+</dd></dl>
+
+<dl class="enumerator">
+<dt id="_CPPv4N3nnp8Training12SM_THRESHOLDE">
+<span id="_CPPv3N3nnp8Training12SM_THRESHOLDE"></span><span id="_CPPv2N3nnp8Training12SM_THRESHOLDE"></span><span class="target" id="classnnp_1_1Training_1a79df98867453f340a4cea8a9e432be98a804f840359bccb1411a2b11498b150b8"></span><code class="descname">SM_THRESHOLD</code><a class="headerlink" href="#_CPPv4N3nnp8Training12SM_THRESHOLDE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Select candidates randomly with RMSE above threshold. </p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="function">
+<dt id="_CPPv4N8Training8TrainingEv">
+<span id="_CPPv3N8Training8TrainingEv"></span><span id="_CPPv2N8Training8TrainingEv"></span><span id="Training::Training"></span><span class="target" id="classnnp_1_1Training_1af98b1bc7ed710e2fa008a72ad29dbdae"></span><code class="descname">Training</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8Training8TrainingEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Constructor. </p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N8TrainingD0Ev">
+<span id="_CPPv3N8TrainingD0Ev"></span><span id="_CPPv2N8TrainingD0Ev"></span><span id="Training::~Training"></span><span class="target" id="classnnp_1_1Training_1a6db6a1a9302641ca0d74308e583667af"></span><code class="descname">~Training</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8TrainingD0Ev" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Destructor, updater vector needs to be cleaned. </p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N8Training10selectSetsEv">
+<span id="_CPPv3N8Training10selectSetsEv"></span><span id="_CPPv2N8Training10selectSetsEv"></span><span id="Training::selectSets"></span><span class="target" id="classnnp_1_1Training_1a451092eefd3f1021b2edd7729b74505c"></span>void <code class="descname">selectSets</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8Training10selectSetsEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Randomly select training and test set structures.</p>
+<p>Also fills training candidates lists. </p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N8Training16writeSetsToFilesEv">
+<span id="_CPPv3N8Training16writeSetsToFilesEv"></span><span id="_CPPv2N8Training16writeSetsToFilesEv"></span><span id="Training::writeSetsToFiles"></span><span class="target" id="classnnp_1_1Training_1af4cbb8263eeb79634e06fc62dc4b359d"></span>void <code class="descname">writeSetsToFiles</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8Training16writeSetsToFilesEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Write training and test set to separate files (train.data and test.data, same format as input.data). </p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N8Training17initializeWeightsEv">
+<span id="_CPPv3N8Training17initializeWeightsEv"></span><span id="_CPPv2N8Training17initializeWeightsEv"></span><span id="Training::initializeWeights"></span><span class="target" id="classnnp_1_1Training_1ab3025fc3780b67e91e063fd490640043"></span>void <code class="descname">initializeWeights</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8Training17initializeWeightsEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Initialize weights for all elements. </p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N8Training23initializeWeightsMemoryE14UpdateStrategy">
+<span id="_CPPv3N8Training23initializeWeightsMemoryE14UpdateStrategy"></span><span id="_CPPv2N8Training23initializeWeightsMemoryE14UpdateStrategy"></span><span id="Training::initializeWeightsMemory__UpdateStrategy"></span><span class="target" id="classnnp_1_1Training_1ab802ff670986203dab60c22f04b07f59"></span>void <code class="descname">initializeWeightsMemory</code><span class="sig-paren">(</span>UpdateStrategy <em>updateStrategy</em> = US_COMBINED<span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8Training23initializeWeightsMemoryE14UpdateStrategy" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Initialize weights vector according to update strategy.</p>
+<p><dl class="docutils">
+<dt><strong>Parameters</strong></dt>
+<dd><ul class="breatheparameterlist first last simple">
+<li><code class="docutils literal notranslate"><span class="pre">updateStrategy</span></code>: Determines the shape of the weights array. </li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N8Training13setupTrainingEv">
+<span id="_CPPv3N8Training13setupTrainingEv"></span><span id="_CPPv2N8Training13setupTrainingEv"></span><span id="Training::setupTraining"></span><span class="target" id="classnnp_1_1Training_1a2b2b016d87bcea95f460b8a2ae93b451"></span>void <code class="descname">setupTraining</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8Training13setupTrainingEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>General training settings and setup of weight update routine. </p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N8Training22calculateNeighborListsEv">
+<span id="_CPPv3N8Training22calculateNeighborListsEv"></span><span id="_CPPv2N8Training22calculateNeighborListsEv"></span><span id="Training::calculateNeighborLists"></span><span class="target" id="classnnp_1_1Training_1ac0de14f9b249aa70a7648c7c3c1cc783"></span>void <code class="descname">calculateNeighborLists</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8Training22calculateNeighborListsEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Calculate neighbor lists for all structures. </p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N8Training13calculateRmseEKbKNSt6stringEKNSt6stringEKNSt6stringEKNSt6stringEKNSt6stringE">
+<span id="_CPPv3N8Training13calculateRmseEKbKNSt6stringEKNSt6stringEKNSt6stringEKNSt6stringEKNSt6stringE"></span><span id="_CPPv2N8Training13calculateRmseEKbKNSt6stringEKNSt6stringEKNSt6stringEKNSt6stringEKNSt6stringE"></span><span id="Training::calculateRmse__bC.ssC.ssC.ssC.ssC.ssC"></span><span class="target" id="classnnp_1_1Training_1a601b23e841bd853ee5d623401867762b"></span>void <code class="descname">calculateRmse</code><span class="sig-paren">(</span>bool <em class="property">const</em> <em>writeCompFiles</em>, std::string <em class="property">const</em> <em>identifier</em> = &quot;&quot;, std::string <em class="property">const</em> <em>fileNameEnergiesTrain</em> = &quot;energies-train.comp&quot;, std::string <em class="property">const</em> <em>fileNameEnergiesTest</em> = &quot;energies-test.comp&quot;, std::string <em class="property">const</em> <em>fileNameForcesTrain</em> = &quot;forces-train.comp&quot;, std::string <em class="property">const</em> <em>fileNameForcesTest</em> = &quot;forces-test.comp&quot;<span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8Training13calculateRmseEKbKNSt6stringEKNSt6stringEKNSt6stringEKNSt6stringEKNSt6stringE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Calculate RMSE for all structures.</p>
+<p><dl class="docutils">
+<dt><strong>Parameters</strong></dt>
+<dd><ul class="breatheparameterlist first last simple">
+<li><code class="docutils literal notranslate"><span class="pre">writeCompFiles</span></code>: Write NN and reference energies and forces to comparison files. </li>
+<li><code class="docutils literal notranslate"><span class="pre">identifier</span></code>: String added to “ENERGY” and “FORCES” log line. </li>
+<li><code class="docutils literal notranslate"><span class="pre">fileNameEnergiesTrain</span></code>: File name for training energies comparison file. </li>
+<li><code class="docutils literal notranslate"><span class="pre">fileNameEnergiesTest</span></code>: File name for test energies comparison file. </li>
+<li><code class="docutils literal notranslate"><span class="pre">fileNameForcesTrain</span></code>: File name for training forces comparison file. </li>
+<li><code class="docutils literal notranslate"><span class="pre">fileNameForcesTest</span></code>: File name for test forces comparison file. </li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N8Training18calculateRmseEpochEv">
+<span id="_CPPv3N8Training18calculateRmseEpochEv"></span><span id="_CPPv2N8Training18calculateRmseEpochEv"></span><span id="Training::calculateRmseEpoch"></span><span class="target" id="classnnp_1_1Training_1a43ccb65cd4785afda565f94614c58b5c"></span>void <code class="descname">calculateRmseEpoch</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8Training18calculateRmseEpochEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Calculate RMSE per epoch for all structures with file names used in training loop.</p>
+<p>Also write training curve to file. </p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4NK8Training12writeWeightsEKNSt6stringE">
+<span id="_CPPv3NK8Training12writeWeightsEKNSt6stringE"></span><span id="_CPPv2NK8Training12writeWeightsEKNSt6stringE"></span><span id="Training::writeWeights__ssCC"></span><span class="target" id="classnnp_1_1Training_1a502cb370a6ec1012b3851cb3439010cf"></span>void <code class="descname">writeWeights</code><span class="sig-paren">(</span>std::string <em class="property">const</em> <em>fileNameFormat</em> = &quot;weights.%03zu.data&quot;<span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK8Training12writeWeightsEKNSt6stringE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Write weights to files (one file for each element).</p>
+<p><dl class="docutils">
+<dt><strong>Parameters</strong></dt>
+<dd><ul class="breatheparameterlist first last simple">
+<li><code class="docutils literal notranslate"><span class="pre">fileNameFormat</span></code>: String with file name format. </li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4NK8Training17writeWeightsEpochEv">
+<span id="_CPPv3NK8Training17writeWeightsEpochEv"></span><span id="_CPPv2NK8Training17writeWeightsEpochEv"></span><span id="Training::writeWeightsEpochC"></span><span class="target" id="classnnp_1_1Training_1af5d3401d4bb6a88ffae1064bfcbd63d4"></span>void <code class="descname">writeWeightsEpoch</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK8Training17writeWeightsEpochEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Write weights to files during training loop. </p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4NK8Training18writeLearningCurveEbKNSt6stringE">
+<span id="_CPPv3NK8Training18writeLearningCurveEbKNSt6stringE"></span><span id="_CPPv2NK8Training18writeLearningCurveEbKNSt6stringE"></span><span id="Training::writeLearningCurve__b.ssCC"></span><span class="target" id="classnnp_1_1Training_1a9bf8f512a191d73ba5e16983aefad3f7"></span>void <code class="descname">writeLearningCurve</code><span class="sig-paren">(</span>bool <em>append</em>, std::string <em class="property">const</em> <em>fileName</em> = &quot;learning-curve.out&quot;<span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK8Training18writeLearningCurveEbKNSt6stringE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Write current RMSEs and epoch information to file.</p>
+<p><dl class="docutils">
+<dt><strong>Parameters</strong></dt>
+<dd><ul class="breatheparameterlist first last simple">
+<li><code class="docutils literal notranslate"><span class="pre">append</span></code>: If true, append to file, otherwise create new file. </li>
+<li><code class="docutils literal notranslate"><span class="pre">fileName</span></code>: File name for learning curve file. </li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4NK8Training21writeNeuronStatisticsEKNSt6stringE">
+<span id="_CPPv3NK8Training21writeNeuronStatisticsEKNSt6stringE"></span><span id="_CPPv2NK8Training21writeNeuronStatisticsEKNSt6stringE"></span><span id="Training::writeNeuronStatistics__ssCC"></span><span class="target" id="classnnp_1_1Training_1a5ed43d1e4da4639080c70de966bb795d"></span>void <code class="descname">writeNeuronStatistics</code><span class="sig-paren">(</span>std::string <em class="property">const</em> <em>fileName</em> = &quot;neuron-stats.out&quot;<span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK8Training21writeNeuronStatisticsEKNSt6stringE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Write neuron statistics collected since last invocation.</p>
+<p><dl class="docutils">
+<dt><strong>Parameters</strong></dt>
+<dd><ul class="breatheparameterlist first last simple">
+<li><code class="docutils literal notranslate"><span class="pre">fileName</span></code>: File name for statistics file. </li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4NK8Training26writeNeuronStatisticsEpochEv">
+<span id="_CPPv3NK8Training26writeNeuronStatisticsEpochEv"></span><span id="_CPPv2NK8Training26writeNeuronStatisticsEpochEv"></span><span id="Training::writeNeuronStatisticsEpochC"></span><span class="target" id="classnnp_1_1Training_1adfe8fab23357a1a30b38983709715071"></span>void <code class="descname">writeNeuronStatisticsEpoch</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK8Training26writeNeuronStatisticsEpochEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Write neuron statistics during training loop. </p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4NK8Training21resetNeuronStatisticsEv">
+<span id="_CPPv3NK8Training21resetNeuronStatisticsEv"></span><span id="_CPPv2NK8Training21resetNeuronStatisticsEv"></span><span id="Training::resetNeuronStatisticsC"></span><span class="target" id="classnnp_1_1Training_1ae552787898f734b9d72689b6dd92fd38"></span>void <code class="descname">resetNeuronStatistics</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK8Training21resetNeuronStatisticsEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Reset neuron statistics for all elements. </p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4NK8Training18writeUpdaterStatusEbKNSt6stringE">
+<span id="_CPPv3NK8Training18writeUpdaterStatusEbKNSt6stringE"></span><span id="_CPPv2NK8Training18writeUpdaterStatusEbKNSt6stringE"></span><span id="Training::writeUpdaterStatus__b.ssCC"></span><span class="target" id="classnnp_1_1Training_1afd5b5410ebf4e4034e3943b7080249fc"></span>void <code class="descname">writeUpdaterStatus</code><span class="sig-paren">(</span>bool <em>append</em>, std::string <em class="property">const</em> <em>fileNameFormat</em> = &quot;updater.%03zu.out&quot;<span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK8Training18writeUpdaterStatusEbKNSt6stringE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Write updater information to file.</p>
+<p><dl class="docutils">
+<dt><strong>Parameters</strong></dt>
+<dd><ul class="breatheparameterlist first last simple">
+<li><code class="docutils literal notranslate"><span class="pre">append</span></code>: If true, append to file, otherwise create new file. </li>
+<li><code class="docutils literal notranslate"><span class="pre">fileNameFormat</span></code>: String with file name format. </li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N8Training20sortUpdateCandidatesEv">
+<span id="_CPPv3N8Training20sortUpdateCandidatesEv"></span><span id="_CPPv2N8Training20sortUpdateCandidatesEv"></span><span id="Training::sortUpdateCandidates"></span><span class="target" id="classnnp_1_1Training_1a5a22d148851c520c64eb8599d7c113f4"></span>void <code class="descname">sortUpdateCandidates</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8Training20sortUpdateCandidatesEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Sort update candidates with descending RMSE. </p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N8Training18checkSelectionModeEv">
+<span id="_CPPv3N8Training18checkSelectionModeEv"></span><span id="_CPPv2N8Training18checkSelectionModeEv"></span><span id="Training::checkSelectionMode"></span><span class="target" id="classnnp_1_1Training_1a3d0cecb1a3e0197fdb693186d39c8796"></span>void <code class="descname">checkSelectionMode</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8Training18checkSelectionModeEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Check if selection mode should be changed. </p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N8Training4loopEv">
+<span id="_CPPv3N8Training4loopEv"></span><span id="_CPPv2N8Training4loopEv"></span><span id="Training::loop"></span><span class="target" id="classnnp_1_1Training_1a84e2af12e3007a2f9955630cd27a0167"></span>void <code class="descname">loop</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8Training4loopEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Execute main training loop. </p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N8Training6updateEb">
+<span id="_CPPv3N8Training6updateEb"></span><span id="_CPPv2N8Training6updateEb"></span><span id="Training::update__b"></span><span class="target" id="classnnp_1_1Training_1a146b6a09592858950a3cbb666c4a59fa"></span>void <code class="descname">update</code><span class="sig-paren">(</span>bool <em>force</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8Training6updateEb" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Perform one update.</p>
+<p><dl class="docutils">
+<dt><strong>Parameters</strong></dt>
+<dd><ul class="breatheparameterlist first last simple">
+<li><code class="docutils literal notranslate"><span class="pre">force</span></code>: If true, perform force update, otherwise energy update. </li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N8Training15getSingleWeightENSt6size_tENSt6size_tE">
+<span id="_CPPv3N8Training15getSingleWeightENSt6size_tENSt6size_tE"></span><span id="_CPPv2N8Training15getSingleWeightENSt6size_tENSt6size_tE"></span><span id="Training::getSingleWeight__std::s.std::s"></span><span class="target" id="classnnp_1_1Training_1ab2d9c91a092bdb9e8eac8441ccb09ef8"></span>double <code class="descname">getSingleWeight</code><span class="sig-paren">(</span>std::size_t <em>element</em>, std::size_t <em>index</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8Training15getSingleWeightENSt6size_tENSt6size_tE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Get a single weight value.</p>
+<p><p>Note: This function is implemented for testing purposes and works correctly only with update strategy </p>
+<a class="reference internal" href="#classnnp_1_1Training_1ad641fa6c3bd89c5c3efd964c9a47429aa876e8890dda60cc514658d0aaf1db4cf"><span class="std std-ref">US_ELEMENT</span></a>. <dl class="docutils">
+<dt><strong>Return</strong></dt>
+<dd>Weight value.</dd>
+<dt><strong>Parameters</strong></dt>
+<dd><ul class="breatheparameterlist first last simple">
+<li><code class="docutils literal notranslate"><span class="pre">element</span></code>: <a class="reference internal" href="classnnp_1_1Element.html#classnnp_1_1Element"><span class="std std-ref">Element</span></a> index of weight. </li>
+<li><code class="docutils literal notranslate"><span class="pre">index</span></code>: Weight index.</li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N8Training15setSingleWeightENSt6size_tENSt6size_tEd">
+<span id="_CPPv3N8Training15setSingleWeightENSt6size_tENSt6size_tEd"></span><span id="_CPPv2N8Training15setSingleWeightENSt6size_tENSt6size_tEd"></span><span id="Training::setSingleWeight__std::s.std::s.double"></span><span class="target" id="classnnp_1_1Training_1aaa4815462bd1b49907a9bce52eb2da43"></span>void <code class="descname">setSingleWeight</code><span class="sig-paren">(</span>std::size_t <em>element</em>, std::size_t <em>index</em>, double <em>value</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8Training15setSingleWeightENSt6size_tENSt6size_tEd" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Set a single weight value.</p>
+<p><p>Note: This function is implemented for testing purposes and works correctly only with update strategy </p>
+<a class="reference internal" href="#classnnp_1_1Training_1ad641fa6c3bd89c5c3efd964c9a47429aa876e8890dda60cc514658d0aaf1db4cf"><span class="std std-ref">US_ELEMENT</span></a>. <dl class="docutils">
+<dt><strong>Parameters</strong></dt>
+<dd><ul class="breatheparameterlist first last simple">
+<li><code class="docutils literal notranslate"><span class="pre">element</span></code>: <a class="reference internal" href="classnnp_1_1Element.html#classnnp_1_1Element"><span class="std std-ref">Element</span></a> index of weight. </li>
+<li><code class="docutils literal notranslate"><span class="pre">index</span></code>: Weight index. </li>
+<li><code class="docutils literal notranslate"><span class="pre">value</span></code>: Weight value.</li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N8Training26calculateWeightDerivativesEP9Structure">
+<span id="_CPPv3N8Training26calculateWeightDerivativesEP9Structure"></span><span id="_CPPv2N8Training26calculateWeightDerivativesEP9Structure"></span><span id="Training::calculateWeightDerivatives__StructureP"></span><span class="target" id="classnnp_1_1Training_1ae22bf5b246022c4f52f45bcc98d7c4be"></span>vector&lt;vector&lt;double&gt;&gt; <code class="descname">calculateWeightDerivatives</code><span class="sig-paren">(</span>Structure *<em>structure</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8Training26calculateWeightDerivativesEP9Structure" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Calculate derivatives of energy with respect to weights.</p>
+<p><dl class="docutils">
+<dt><strong>Return</strong></dt>
+<dd>Vector with derivatives of energy with respect to weights (per element).</dd>
+<dt><strong>Note</strong></dt>
+<dd>This function is implemented for testing purposes. </dd>
+<dt><strong>Parameters</strong></dt>
+<dd><ul class="breatheparameterlist first last simple">
+<li><code class="docutils literal notranslate"><span class="pre">structure</span></code>: <a class="reference internal" href="structnnp_1_1Structure.html#structnnp_1_1Structure"><span class="std std-ref">Structure</span></a> to process.</li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N8Training26calculateWeightDerivativesEP9StructureNSt6size_tENSt6size_tE">
+<span id="_CPPv3N8Training26calculateWeightDerivativesEP9StructureNSt6size_tENSt6size_tE"></span><span id="_CPPv2N8Training26calculateWeightDerivativesEP9StructureNSt6size_tENSt6size_tE"></span><span id="Training::calculateWeightDerivatives__StructureP.std::s.std::s"></span><span class="target" id="classnnp_1_1Training_1abf466a175faf1511b305ed728042edb9"></span>vector&lt;vector&lt;double&gt;&gt; <code class="descname">calculateWeightDerivatives</code><span class="sig-paren">(</span>Structure *<em>structure</em>, std::size_t <em>atom</em>, std::size_t <em>component</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8Training26calculateWeightDerivativesEP9StructureNSt6size_tENSt6size_tE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Calculate derivatives of force with respect to weights.</p>
+<p><dl class="docutils">
+<dt><strong>Return</strong></dt>
+<dd>Vector with derivatives of force with respect to weights (per element).</dd>
+<dt><strong>Note</strong></dt>
+<dd>This function is implemented for testing purposes. </dd>
+<dt><strong>Parameters</strong></dt>
+<dd><ul class="breatheparameterlist first last simple">
+<li><code class="docutils literal notranslate"><span class="pre">structure</span></code>: <a class="reference internal" href="structnnp_1_1Structure.html#structnnp_1_1Structure"><span class="std std-ref">Structure</span></a> to process. </li>
+<li><code class="docutils literal notranslate"><span class="pre">atom</span></code>: <a class="reference internal" href="structnnp_1_1Atom.html#structnnp_1_1Atom"><span class="std std-ref">Atom</span></a> index. </li>
+<li><code class="docutils literal notranslate"><span class="pre">component</span></code>: x, y or z-component of force (0, 1, 2).</li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N8Training22setTrainingLogFileNameENSt6stringE">
+<span id="_CPPv3N8Training22setTrainingLogFileNameENSt6stringE"></span><span id="_CPPv2N8Training22setTrainingLogFileNameENSt6stringE"></span><span id="Training::setTrainingLogFileName__ss"></span><span class="target" id="classnnp_1_1Training_1a00f0177f326dacee6f7c5a1f7628e21c"></span>void <code class="descname">setTrainingLogFileName</code><span class="sig-paren">(</span>std::string <em>fileName</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8Training22setTrainingLogFileNameENSt6stringE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Set training log file name</p>
+<p><dl class="docutils">
+<dt><strong>Parameters</strong></dt>
+<dd><ul class="breatheparameterlist first last simple">
+<li><code class="docutils literal notranslate"><span class="pre">fileName</span></code>: File name for training log. </li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Private Functions</p>
+<dl class="function">
+<dt id="_CPPv4NK8Training7advanceEv">
+<span id="_CPPv3NK8Training7advanceEv"></span><span id="_CPPv2NK8Training7advanceEv"></span><span id="Training::advanceC"></span><span class="target" id="classnnp_1_1Training_1a8ee4ba6b76e32b5ae019b4349225412d"></span>bool <code class="descname">advance</code><span class="sig-paren">(</span><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK8Training7advanceEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Check if training loop should be continued.</p>
+<p><dl class="docutils">
+<dt><strong>Return</strong></dt>
+<dd>True if further training should be performed, false otherwise. </dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N8Training10getWeightsEv">
+<span id="_CPPv3N8Training10getWeightsEv"></span><span id="_CPPv2N8Training10getWeightsEv"></span><span id="Training::getWeights"></span><span class="target" id="classnnp_1_1Training_1a9e7a7553f60ebf30dbdfb8efc64b32c0"></span>void <code class="descname">getWeights</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8Training10getWeightsEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Get weights from neural network class. </p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N8Training10setWeightsEv">
+<span id="_CPPv3N8Training10setWeightsEv"></span><span id="_CPPv2N8Training10setWeightsEv"></span><span id="Training::setWeights"></span><span class="target" id="classnnp_1_1Training_1a82549ec0800f63ffaf830b46f865cdbb"></span>void <code class="descname">setWeights</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8Training10setWeightsEv" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Set weights in neural network class. </p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N8Training19addTrainingLogEntryEiNSt6size_tEdNSt6vectorIdEENSt6vectorIdEENSt6size_tENSt6size_tE">
+<span id="_CPPv3N8Training19addTrainingLogEntryEiNSt6size_tEdNSt6vectorIdEENSt6vectorIdEENSt6size_tENSt6size_tE"></span><span id="_CPPv2N8Training19addTrainingLogEntryEiNSt6size_tEdNSt6vectorIdEENSt6vectorIdEENSt6size_tENSt6size_tE"></span><span id="Training::addTrainingLogEntry__i.std::s.double.std::vector:double:.std::vector:double:.std::s.std::s"></span><span class="target" id="classnnp_1_1Training_1aa97930720793071fc6f57d3d9a6af53c"></span>void <code class="descname">addTrainingLogEntry</code><span class="sig-paren">(</span>int <em>proc</em>, std::size_t <em>il</em>, double <em>f</em>, std::vector&lt;double&gt; <em>absXi</em>, std::vector&lt;double&gt; <em>meanH</em>, std::size_t <em>isg</em>, std::size_t <em>is</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8Training19addTrainingLogEntryEiNSt6size_tEdNSt6vectorIdEENSt6vectorIdEENSt6size_tENSt6size_tE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Write energy update data to training log file.</p>
+<p><dl class="docutils">
+<dt><strong>Parameters</strong></dt>
+<dd><ul class="breatheparameterlist first last simple">
+<li><code class="docutils literal notranslate"><span class="pre">proc</span></code>: Processor which performed update. </li>
+<li><code class="docutils literal notranslate"><span class="pre">il</span></code>: Loop index of threshold loop. </li>
+<li><code class="docutils literal notranslate"><span class="pre">f</span></code>: RMSE fraction of update candidate. </li>
+<li><code class="docutils literal notranslate"><span class="pre">absXi</span></code>: Absolute error for each updater. </li>
+<li><code class="docutils literal notranslate"><span class="pre">meanH</span></code>: Mean magnitude of derivative vector for each updater. </li>
+<li><code class="docutils literal notranslate"><span class="pre">is</span></code>: Local structure index. </li>
+<li><code class="docutils literal notranslate"><span class="pre">isg</span></code>: Global structure index. </li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="_CPPv4N8Training19addTrainingLogEntryEiNSt6size_tEdNSt6vectorIdEENSt6vectorIdEENSt6size_tENSt6size_tENSt6size_tENSt6size_tE">
+<span id="_CPPv3N8Training19addTrainingLogEntryEiNSt6size_tEdNSt6vectorIdEENSt6vectorIdEENSt6size_tENSt6size_tENSt6size_tENSt6size_tE"></span><span id="_CPPv2N8Training19addTrainingLogEntryEiNSt6size_tEdNSt6vectorIdEENSt6vectorIdEENSt6size_tENSt6size_tENSt6size_tENSt6size_tE"></span><span id="Training::addTrainingLogEntry__i.std::s.double.std::vector:double:.std::vector:double:.std::s.std::s.std::s.std::s"></span><span class="target" id="classnnp_1_1Training_1ac38fb93feb5295aaeb5d41a121ae8f54"></span>void <code class="descname">addTrainingLogEntry</code><span class="sig-paren">(</span>int <em>proc</em>, std::size_t <em>il</em>, double <em>f</em>, std::vector&lt;double&gt; <em>absXi</em>, std::vector&lt;double&gt; <em>meanH</em>, std::size_t <em>is</em>, std::size_t <em>isg</em>, std::size_t <em>ia</em>, std::size_t <em>ic</em><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv4N8Training19addTrainingLogEntryEiNSt6size_tEdNSt6vectorIdEENSt6vectorIdEENSt6size_tENSt6size_tENSt6size_tENSt6size_tE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Write force update data to training log file.</p>
+<p><dl class="docutils">
+<dt><strong>Parameters</strong></dt>
+<dd><ul class="breatheparameterlist first last simple">
+<li><code class="docutils literal notranslate"><span class="pre">proc</span></code>: Processor which performed update. </li>
+<li><code class="docutils literal notranslate"><span class="pre">il</span></code>: Loop index of threshold loop. </li>
+<li><code class="docutils literal notranslate"><span class="pre">f</span></code>: RMSE fraction of update candidate. </li>
+<li><code class="docutils literal notranslate"><span class="pre">absXi</span></code>: Absolute error for each updater. </li>
+<li><code class="docutils literal notranslate"><span class="pre">meanH</span></code>: Mean magnitude of derivative vector for each updater. </li>
+<li><code class="docutils literal notranslate"><span class="pre">is</span></code>: Local structure index. </li>
+<li><code class="docutils literal notranslate"><span class="pre">isg</span></code>: Global structure index. </li>
+<li><code class="docutils literal notranslate"><span class="pre">ia</span></code>: <a class="reference internal" href="structnnp_1_1Atom.html#structnnp_1_1Atom"><span class="std std-ref">Atom</span></a> index. </li>
+<li><code class="docutils literal notranslate"><span class="pre">ic</span></code>: Component index. </li>
+</ul>
+</dd>
+</dl>
+</p>
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Private Members</p>
+<dl class="member">
+<dt id="_CPPv4N3nnp8Training11updaterTypeE">
+<span id="_CPPv3N3nnp8Training11updaterTypeE"></span><span id="_CPPv2N3nnp8Training11updaterTypeE"></span><span id="nnp::Training::updaterType__UpdaterType"></span><span class="target" id="classnnp_1_1Training_1a03f9d45ef8680c15e578906298a1b891"></span><a class="reference internal" href="#_CPPv4N3nnp8Training11UpdaterTypeE" title="nnp::Training::UpdaterType">UpdaterType</a> <code class="descname">updaterType</code><a class="headerlink" href="#_CPPv4N3nnp8Training11updaterTypeE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p><a class="reference internal" href="classnnp_1_1Updater.html#classnnp_1_1Updater"><span class="std std-ref">Updater</span></a> type used. </p>
+</dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N3nnp8Training12parallelModeE">
+<span id="_CPPv3N3nnp8Training12parallelModeE"></span><span id="_CPPv2N3nnp8Training12parallelModeE"></span><span id="nnp::Training::parallelMode__ParallelMode"></span><span class="target" id="classnnp_1_1Training_1ac2bec3d1ad183e620687bf41ede6f5ad"></span><a class="reference internal" href="#_CPPv4N3nnp8Training12ParallelModeE" title="nnp::Training::ParallelMode">ParallelMode</a> <code class="descname">parallelMode</code><a class="headerlink" href="#_CPPv4N3nnp8Training12parallelModeE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Parallel mode used. </p>
+</dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N3nnp8Training14updateStrategyE">
+<span id="_CPPv3N3nnp8Training14updateStrategyE"></span><span id="_CPPv2N3nnp8Training14updateStrategyE"></span><span id="nnp::Training::updateStrategy__UpdateStrategy"></span><span class="target" id="classnnp_1_1Training_1ab9949593aada759d082eae33a3da04c8"></span><a class="reference internal" href="#_CPPv4N3nnp8Training14UpdateStrategyE" title="nnp::Training::UpdateStrategy">UpdateStrategy</a> <code class="descname">updateStrategy</code><a class="headerlink" href="#_CPPv4N3nnp8Training14updateStrategyE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Update strategy used. </p>
+</dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N3nnp8Training13selectionModeE">
+<span id="_CPPv3N3nnp8Training13selectionModeE"></span><span id="_CPPv2N3nnp8Training13selectionModeE"></span><span id="nnp::Training::selectionMode__SelectionMode"></span><span class="target" id="classnnp_1_1Training_1a07cdd8d6ceafbf0d5a4e228d6e43d8a3"></span><a class="reference internal" href="#_CPPv4N3nnp8Training13SelectionModeE" title="nnp::Training::SelectionMode">SelectionMode</a> <code class="descname">selectionMode</code><a class="headerlink" href="#_CPPv4N3nnp8Training13selectionModeE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Selection mode for update candidates. </p>
+</dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N3nnp8Training11hasUpdatersE">
+<span id="_CPPv3N3nnp8Training11hasUpdatersE"></span><span id="_CPPv2N3nnp8Training11hasUpdatersE"></span><span id="nnp::Training::hasUpdaters__b"></span><span class="target" id="classnnp_1_1Training_1a3c709ea24c0cb6ea3bfdaaae6efd2202"></span>bool <code class="descname">hasUpdaters</code><a class="headerlink" href="#_CPPv4N3nnp8Training11hasUpdatersE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>If this rank performs weight updates. </p>
+</dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N3nnp8Training13hasStructuresE">
+<span id="_CPPv3N3nnp8Training13hasStructuresE"></span><span id="_CPPv2N3nnp8Training13hasStructuresE"></span><span id="nnp::Training::hasStructures__b"></span><span class="target" id="classnnp_1_1Training_1aeee2583a1323180d235f16717111f39e"></span>bool <code class="descname">hasStructures</code><a class="headerlink" href="#_CPPv4N3nnp8Training13hasStructuresE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>If this rank holds structure information. </p>
+</dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N3nnp8Training9useForcesE">
+<span id="_CPPv3N3nnp8Training9useForcesE"></span><span id="_CPPv2N3nnp8Training9useForcesE"></span><span id="nnp::Training::useForces__b"></span><span class="target" id="classnnp_1_1Training_1a178647e7ce5eca9f6bb7cc4c371909f3"></span>bool <code class="descname">useForces</code><a class="headerlink" href="#_CPPv4N3nnp8Training9useForcesE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Use forces for training. </p>
+</dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N3nnp8Training22reapeatedEnergyUpdatesE">
+<span id="_CPPv3N3nnp8Training22reapeatedEnergyUpdatesE"></span><span id="_CPPv2N3nnp8Training22reapeatedEnergyUpdatesE"></span><span id="nnp::Training::reapeatedEnergyUpdates__b"></span><span class="target" id="classnnp_1_1Training_1a2c9b72725f426708f74649dd6cdd065d"></span>bool <code class="descname">reapeatedEnergyUpdates</code><a class="headerlink" href="#_CPPv4N3nnp8Training22reapeatedEnergyUpdatesE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>After force update perform energy update for corresponding structure. </p>
+</dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N3nnp8Training10freeMemoryE">
+<span id="_CPPv3N3nnp8Training10freeMemoryE"></span><span id="_CPPv2N3nnp8Training10freeMemoryE"></span><span id="nnp::Training::freeMemory__b"></span><span class="target" id="classnnp_1_1Training_1af4986e0d008729499003bdf5d2ff59e6"></span>bool <code class="descname">freeMemory</code><a class="headerlink" href="#_CPPv4N3nnp8Training10freeMemoryE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Free symmetry function memory after calculation. </p>
+</dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N3nnp8Training16writeTrainingLogE">
+<span id="_CPPv3N3nnp8Training16writeTrainingLogE"></span><span id="_CPPv2N3nnp8Training16writeTrainingLogE"></span><span id="nnp::Training::writeTrainingLog__b"></span><span class="target" id="classnnp_1_1Training_1a671f1f45d0b277daec4da583d0f9ce7b"></span>bool <code class="descname">writeTrainingLog</code><a class="headerlink" href="#_CPPv4N3nnp8Training16writeTrainingLogE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Whether training log file is written. </p>
+</dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N3nnp8Training8myStreamE">
+<span id="_CPPv3N3nnp8Training8myStreamE"></span><span id="_CPPv2N3nnp8Training8myStreamE"></span><span id="nnp::Training::myStream__std::s"></span><span class="target" id="classnnp_1_1Training_1a2305508690b33833b2d04027c0d2f513"></span>std::size_t <code class="descname">myStream</code><a class="headerlink" href="#_CPPv4N3nnp8Training8myStreamE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Kalman filter stream of this processor. </p>
+</dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N3nnp8Training10numStreamsE">
+<span id="_CPPv3N3nnp8Training10numStreamsE"></span><span id="_CPPv2N3nnp8Training10numStreamsE"></span><span id="nnp::Training::numStreams__std::s"></span><span class="target" id="classnnp_1_1Training_1a9935725228f1575d8b8aca02a13d6ab1"></span>std::size_t <code class="descname">numStreams</code><a class="headerlink" href="#_CPPv4N3nnp8Training10numStreamsE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Number of Kalman filter streams. </p>
+</dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N3nnp8Training11numUpdatersE">
+<span id="_CPPv3N3nnp8Training11numUpdatersE"></span><span id="_CPPv2N3nnp8Training11numUpdatersE"></span><span id="nnp::Training::numUpdaters__std::s"></span><span class="target" id="classnnp_1_1Training_1a68e80f07031867155a7fbc4f480a2bd0"></span>std::size_t <code class="descname">numUpdaters</code><a class="headerlink" href="#_CPPv4N3nnp8Training11numUpdatersE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Number of updaters (depends on update strategy). </p>
+</dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N3nnp8Training16numEnergiesTrainE">
+<span id="_CPPv3N3nnp8Training16numEnergiesTrainE"></span><span id="_CPPv2N3nnp8Training16numEnergiesTrainE"></span><span id="nnp::Training::numEnergiesTrain__std::s"></span><span class="target" id="classnnp_1_1Training_1a52d50bb494ac9476830c83e4e1320637"></span>std::size_t <code class="descname">numEnergiesTrain</code><a class="headerlink" href="#_CPPv4N3nnp8Training16numEnergiesTrainE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Number of energies in training set. </p>
+</dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N3nnp8Training14numForcesTrainE">
+<span id="_CPPv3N3nnp8Training14numForcesTrainE"></span><span id="_CPPv2N3nnp8Training14numForcesTrainE"></span><span id="nnp::Training::numForcesTrain__std::s"></span><span class="target" id="classnnp_1_1Training_1a680c53365fdb7859ee139ad52929e87a"></span>std::size_t <code class="descname">numForcesTrain</code><a class="headerlink" href="#_CPPv4N3nnp8Training14numForcesTrainE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Number of forces in training set. </p>
+</dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N3nnp8Training9numEpochsE">
+<span id="_CPPv3N3nnp8Training9numEpochsE"></span><span id="_CPPv2N3nnp8Training9numEpochsE"></span><span id="nnp::Training::numEpochs__std::s"></span><span class="target" id="classnnp_1_1Training_1a8a30db3b7747df34b72d89cdfb791eb0"></span>std::size_t <code class="descname">numEpochs</code><a class="headerlink" href="#_CPPv4N3nnp8Training9numEpochsE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Number of epochs requested. </p>
+</dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N3nnp8Training5epochE">
+<span id="_CPPv3N3nnp8Training5epochE"></span><span id="_CPPv2N3nnp8Training5epochE"></span><span id="nnp::Training::epoch__std::s"></span><span class="target" id="classnnp_1_1Training_1a08b98e274dffce06459a1c29a05e90a7"></span>std::size_t <code class="descname">epoch</code><a class="headerlink" href="#_CPPv4N3nnp8Training5epochE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Current epoch. </p>
+</dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N3nnp8Training18writeEnergiesEveryE">
+<span id="_CPPv3N3nnp8Training18writeEnergiesEveryE"></span><span id="_CPPv2N3nnp8Training18writeEnergiesEveryE"></span><span id="nnp::Training::writeEnergiesEvery__std::s"></span><span class="target" id="classnnp_1_1Training_1ab0a1d2866c0015cb7c77673ee48debe7"></span>std::size_t <code class="descname">writeEnergiesEvery</code><a class="headerlink" href="#_CPPv4N3nnp8Training18writeEnergiesEveryE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Write energy comparison every this many epochs. </p>
+</dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N3nnp8Training16writeForcesEveryE">
+<span id="_CPPv3N3nnp8Training16writeForcesEveryE"></span><span id="_CPPv2N3nnp8Training16writeForcesEveryE"></span><span id="nnp::Training::writeForcesEvery__std::s"></span><span class="target" id="classnnp_1_1Training_1aa6ea11147c7970f84c8bb9442cef9124"></span>std::size_t <code class="descname">writeForcesEvery</code><a class="headerlink" href="#_CPPv4N3nnp8Training16writeForcesEveryE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Write force comparison every this many epochs. </p>
+</dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N3nnp8Training17writeWeightsEveryE">
+<span id="_CPPv3N3nnp8Training17writeWeightsEveryE"></span><span id="_CPPv2N3nnp8Training17writeWeightsEveryE"></span><span id="nnp::Training::writeWeightsEvery__std::s"></span><span class="target" id="classnnp_1_1Training_1a2a5d0fda76e8e10fd700405323bd9713"></span>std::size_t <code class="descname">writeWeightsEvery</code><a class="headerlink" href="#_CPPv4N3nnp8Training17writeWeightsEveryE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Write weights every this many epochs. </p>
+</dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N3nnp8Training26writeNeuronStatisticsEveryE">
+<span id="_CPPv3N3nnp8Training26writeNeuronStatisticsEveryE"></span><span id="_CPPv2N3nnp8Training26writeNeuronStatisticsEveryE"></span><span id="nnp::Training::writeNeuronStatisticsEvery__std::s"></span><span class="target" id="classnnp_1_1Training_1a9be53bf5fcdbefa900c9c7f8a8a6bb40"></span>std::size_t <code class="descname">writeNeuronStatisticsEvery</code><a class="headerlink" href="#_CPPv4N3nnp8Training26writeNeuronStatisticsEveryE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Write neuron statistics every this many epochs. </p>
+</dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N3nnp8Training19writeEnergiesAlwaysE">
+<span id="_CPPv3N3nnp8Training19writeEnergiesAlwaysE"></span><span id="_CPPv2N3nnp8Training19writeEnergiesAlwaysE"></span><span id="nnp::Training::writeEnergiesAlways__std::s"></span><span class="target" id="classnnp_1_1Training_1a2a0b8752dff4f4b20cbde162a02803dc"></span>std::size_t <code class="descname">writeEnergiesAlways</code><a class="headerlink" href="#_CPPv4N3nnp8Training19writeEnergiesAlwaysE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Up to this epoch energy comparison is written every epoch. </p>
+</dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N3nnp8Training17writeForcesAlwaysE">
+<span id="_CPPv3N3nnp8Training17writeForcesAlwaysE"></span><span id="_CPPv2N3nnp8Training17writeForcesAlwaysE"></span><span id="nnp::Training::writeForcesAlways__std::s"></span><span class="target" id="classnnp_1_1Training_1ac50ff85625c4216d442869967c8a2abd"></span>std::size_t <code class="descname">writeForcesAlways</code><a class="headerlink" href="#_CPPv4N3nnp8Training17writeForcesAlwaysE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Up to this epoch force comparison is written every epoch. </p>
+</dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N3nnp8Training18writeWeightsAlwaysE">
+<span id="_CPPv3N3nnp8Training18writeWeightsAlwaysE"></span><span id="_CPPv2N3nnp8Training18writeWeightsAlwaysE"></span><span id="nnp::Training::writeWeightsAlways__std::s"></span><span class="target" id="classnnp_1_1Training_1a103de589f43d89513b741cea0bdbf541"></span>std::size_t <code class="descname">writeWeightsAlways</code><a class="headerlink" href="#_CPPv4N3nnp8Training18writeWeightsAlwaysE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Up to this epoch weights are written every epoch. </p>
+</dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N3nnp8Training27writeNeuronStatisticsAlwaysE">
+<span id="_CPPv3N3nnp8Training27writeNeuronStatisticsAlwaysE"></span><span id="_CPPv2N3nnp8Training27writeNeuronStatisticsAlwaysE"></span><span id="nnp::Training::writeNeuronStatisticsAlways__std::s"></span><span class="target" id="classnnp_1_1Training_1a61a21e51fe6761fe3a3a44533d70603d"></span>std::size_t <code class="descname">writeNeuronStatisticsAlways</code><a class="headerlink" href="#_CPPv4N3nnp8Training27writeNeuronStatisticsAlwaysE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Up to this epoch neuron statistics are written every epoch. </p>
+</dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N3nnp8Training25posUpdateCandidatesEnergyE">
+<span id="_CPPv3N3nnp8Training25posUpdateCandidatesEnergyE"></span><span id="_CPPv2N3nnp8Training25posUpdateCandidatesEnergyE"></span><span id="nnp::Training::posUpdateCandidatesEnergy__std::s"></span><span class="target" id="classnnp_1_1Training_1a79b974ae3fa3b24624175e40820cbef3"></span>std::size_t <code class="descname">posUpdateCandidatesEnergy</code><a class="headerlink" href="#_CPPv4N3nnp8Training25posUpdateCandidatesEnergyE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Current position in energy update candidate list (SM_SORT). </p>
+</dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N3nnp8Training24posUpdateCandidatesForceE">
+<span id="_CPPv3N3nnp8Training24posUpdateCandidatesForceE"></span><span id="_CPPv2N3nnp8Training24posUpdateCandidatesForceE"></span><span id="nnp::Training::posUpdateCandidatesForce__std::s"></span><span class="target" id="classnnp_1_1Training_1a00eff876cbb389785f465e15a06232d9"></span>std::size_t <code class="descname">posUpdateCandidatesForce</code><a class="headerlink" href="#_CPPv4N3nnp8Training24posUpdateCandidatesForceE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Current position in force update candidate list (SM_SORT). </p>
+</dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N3nnp8Training19rmseThresholdTrialsE">
+<span id="_CPPv3N3nnp8Training19rmseThresholdTrialsE"></span><span id="_CPPv2N3nnp8Training19rmseThresholdTrialsE"></span><span id="nnp::Training::rmseThresholdTrials__std::s"></span><span class="target" id="classnnp_1_1Training_1a177de8ee0c860a316e93b28e5f225a52"></span>std::size_t <code class="descname">rmseThresholdTrials</code><a class="headerlink" href="#_CPPv4N3nnp8Training19rmseThresholdTrialsE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Maximum trials for SM_THRESHOLD selection mode. </p>
+</dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N3nnp8Training12countUpdatesE">
+<span id="_CPPv3N3nnp8Training12countUpdatesE"></span><span id="_CPPv2N3nnp8Training12countUpdatesE"></span><span id="nnp::Training::countUpdates__std::s"></span><span class="target" id="classnnp_1_1Training_1a4daf50292f3efe2614a473be9ab1192f"></span>std::size_t <code class="descname">countUpdates</code><a class="headerlink" href="#_CPPv4N3nnp8Training12countUpdatesE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Update counter. </p>
+</dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N3nnp8Training21epochFractionEnergiesE">
+<span id="_CPPv3N3nnp8Training21epochFractionEnergiesE"></span><span id="_CPPv2N3nnp8Training21epochFractionEnergiesE"></span><span id="nnp::Training::epochFractionEnergies__double"></span><span class="target" id="classnnp_1_1Training_1a1431d550090ff1c977841fe7f467bc76"></span>double <code class="descname">epochFractionEnergies</code><a class="headerlink" href="#_CPPv4N3nnp8Training21epochFractionEnergiesE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Desired energy update fraction per epoch. </p>
+</dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N3nnp8Training19epochFractionForcesE">
+<span id="_CPPv3N3nnp8Training19epochFractionForcesE"></span><span id="_CPPv2N3nnp8Training19epochFractionForcesE"></span><span id="nnp::Training::epochFractionForces__double"></span><span class="target" id="classnnp_1_1Training_1aafc0d424c88d1d29ec13e07671f8d69f"></span>double <code class="descname">epochFractionForces</code><a class="headerlink" href="#_CPPv4N3nnp8Training19epochFractionForcesE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Desired force update fraction per epoch. </p>
+</dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N3nnp8Training17rmseEnergiesTrainE">
+<span id="_CPPv3N3nnp8Training17rmseEnergiesTrainE"></span><span id="_CPPv2N3nnp8Training17rmseEnergiesTrainE"></span><span id="nnp::Training::rmseEnergiesTrain__double"></span><span class="target" id="classnnp_1_1Training_1a9f6f8b773d7060afaa53e8b2d96869d2"></span>double <code class="descname">rmseEnergiesTrain</code><a class="headerlink" href="#_CPPv4N3nnp8Training17rmseEnergiesTrainE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Current RMSE of training energies. </p>
+</dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N3nnp8Training16rmseEnergiesTestE">
+<span id="_CPPv3N3nnp8Training16rmseEnergiesTestE"></span><span id="_CPPv2N3nnp8Training16rmseEnergiesTestE"></span><span id="nnp::Training::rmseEnergiesTest__double"></span><span class="target" id="classnnp_1_1Training_1a1324b5809246f19fb495bbfd41aca702"></span>double <code class="descname">rmseEnergiesTest</code><a class="headerlink" href="#_CPPv4N3nnp8Training16rmseEnergiesTestE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Current RMSE of test energies. </p>
+</dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N3nnp8Training15rmseForcesTrainE">
+<span id="_CPPv3N3nnp8Training15rmseForcesTrainE"></span><span id="_CPPv2N3nnp8Training15rmseForcesTrainE"></span><span id="nnp::Training::rmseForcesTrain__double"></span><span class="target" id="classnnp_1_1Training_1aa8686a8f143a748159d7504ede28245a"></span>double <code class="descname">rmseForcesTrain</code><a class="headerlink" href="#_CPPv4N3nnp8Training15rmseForcesTrainE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Current RMSE of training forces. </p>
+</dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N3nnp8Training14rmseForcesTestE">
+<span id="_CPPv3N3nnp8Training14rmseForcesTestE"></span><span id="_CPPv2N3nnp8Training14rmseForcesTestE"></span><span id="nnp::Training::rmseForcesTest__double"></span><span class="target" id="classnnp_1_1Training_1af681c45899d95b758df12960f22c6064"></span>double <code class="descname">rmseForcesTest</code><a class="headerlink" href="#_CPPv4N3nnp8Training14rmseForcesTestE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Current RMSE of test forces. </p>
+</dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N3nnp8Training19rmseThresholdEnergyE">
+<span id="_CPPv3N3nnp8Training19rmseThresholdEnergyE"></span><span id="_CPPv2N3nnp8Training19rmseThresholdEnergyE"></span><span id="nnp::Training::rmseThresholdEnergy__double"></span><span class="target" id="classnnp_1_1Training_1aad707e56a4d97382e674a31c48bae7b6"></span>double <code class="descname">rmseThresholdEnergy</code><a class="headerlink" href="#_CPPv4N3nnp8Training19rmseThresholdEnergyE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>RMSE threshold for energy update candidates. </p>
+</dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N3nnp8Training18rmseThresholdForceE">
+<span id="_CPPv3N3nnp8Training18rmseThresholdForceE"></span><span id="_CPPv2N3nnp8Training18rmseThresholdForceE"></span><span id="nnp::Training::rmseThresholdForce__double"></span><span class="target" id="classnnp_1_1Training_1abf87e96644a2f87dd401683783a262dc"></span>double <code class="descname">rmseThresholdForce</code><a class="headerlink" href="#_CPPv4N3nnp8Training18rmseThresholdForceE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>RMSE threshold for force update candidates. </p>
+</dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N3nnp8Training11forceWeightE">
+<span id="_CPPv3N3nnp8Training11forceWeightE"></span><span id="_CPPv2N3nnp8Training11forceWeightE"></span><span id="nnp::Training::forceWeight__double"></span><span class="target" id="classnnp_1_1Training_1a63a1bb27c4a92c6a504588e4ace64892"></span>double <code class="descname">forceWeight</code><a class="headerlink" href="#_CPPv4N3nnp8Training11forceWeightE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Force update weight. </p>
+</dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N3nnp8Training19trainingLogFileNameE">
+<span id="_CPPv3N3nnp8Training19trainingLogFileNameE"></span><span id="_CPPv2N3nnp8Training19trainingLogFileNameE"></span><span id="nnp::Training::trainingLogFileName__ss"></span><span class="target" id="classnnp_1_1Training_1a3f209dcaac73586a0ebb0ea92680ee3e"></span>std::string <code class="descname">trainingLogFileName</code><a class="headerlink" href="#_CPPv4N3nnp8Training19trainingLogFileNameE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>File name for training log. </p>
+</dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N3nnp8Training11trainingLogE">
+<span id="_CPPv3N3nnp8Training11trainingLogE"></span><span id="_CPPv2N3nnp8Training11trainingLogE"></span><span id="nnp::Training::trainingLog__std::ofstream"></span><span class="target" id="classnnp_1_1Training_1a385a420ca6f05019c349d0ca5d6bf10b"></span>std::ofstream <code class="descname">trainingLog</code><a class="headerlink" href="#_CPPv4N3nnp8Training11trainingLogE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p><a class="reference internal" href="#classnnp_1_1Training"><span class="std std-ref">Training</span></a> log file. </p>
+</dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N3nnp8Training22updateCandidatesEnergyE">
+<span id="_CPPv3N3nnp8Training22updateCandidatesEnergyE"></span><span id="_CPPv2N3nnp8Training22updateCandidatesEnergyE"></span><span id="nnp::Training::updateCandidatesEnergy__std::vector:UpdateCandidate:"></span><span class="target" id="classnnp_1_1Training_1ad190613b787e9aa58caa1f4eda4939ff"></span>std::vector&lt;<a class="reference internal" href="#_CPPv4N3nnp8Training15UpdateCandidateE" title="nnp::Training::UpdateCandidate">UpdateCandidate</a>&gt; <code class="descname">updateCandidatesEnergy</code><a class="headerlink" href="#_CPPv4N3nnp8Training22updateCandidatesEnergyE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Vector with indices of training structures. </p>
+</dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N3nnp8Training21updateCandidatesForceE">
+<span id="_CPPv3N3nnp8Training21updateCandidatesForceE"></span><span id="_CPPv2N3nnp8Training21updateCandidatesForceE"></span><span id="nnp::Training::updateCandidatesForce__std::vector:UpdateCandidate:"></span><span class="target" id="classnnp_1_1Training_1aa8a0af1418c7f52bf948e06c86706cb7"></span>std::vector&lt;<a class="reference internal" href="#_CPPv4N3nnp8Training15UpdateCandidateE" title="nnp::Training::UpdateCandidate">UpdateCandidate</a>&gt; <code class="descname">updateCandidatesForce</code><a class="headerlink" href="#_CPPv4N3nnp8Training21updateCandidatesForceE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Vector with indices of training forces. </p>
+</dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N3nnp8Training7weightsE">
+<span id="_CPPv3N3nnp8Training7weightsE"></span><span id="_CPPv2N3nnp8Training7weightsE"></span><span id="nnp::Training::weights__std::vector:std::vector:double::"></span><span class="target" id="classnnp_1_1Training_1af28c4111f0f053fbccb6b072b47c6fea"></span>std::vector&lt;std::vector&lt;double&gt;&gt; <code class="descname">weights</code><a class="headerlink" href="#_CPPv4N3nnp8Training7weightsE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Neural network weights and biases for each element. </p>
+</dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N3nnp8Training8updatersE">
+<span id="_CPPv3N3nnp8Training8updatersE"></span><span id="_CPPv2N3nnp8Training8updatersE"></span><span id="nnp::Training::updaters__std::vector:UpdaterP:"></span><span class="target" id="classnnp_1_1Training_1a5f4d6996721dd95776b851d73ee77b7a"></span>std::vector&lt;<a class="reference internal" href="classnnp_1_1Updater.html#_CPPv4N3nnp7UpdaterE" title="nnp::Updater">Updater</a> *&gt; <code class="descname">updaters</code><a class="headerlink" href="#_CPPv4N3nnp8Training8updatersE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p><a class="reference internal" href="classnnp_1_1Updater.html#classnnp_1_1Updater"><span class="std std-ref">Updater</span></a> (Kalman filter) for each element. </p>
+</dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N3nnp8Training21selectionModeScheduleE">
+<span id="_CPPv3N3nnp8Training21selectionModeScheduleE"></span><span id="_CPPv2N3nnp8Training21selectionModeScheduleE"></span><span id="nnp::Training::selectionModeSchedule__std::map:std::s.SelectionMode:"></span><span class="target" id="classnnp_1_1Training_1a38b196d53b5ccb2b702534c123d659e6"></span>std::map&lt;std::size_t, <a class="reference internal" href="#_CPPv4N3nnp8Training13SelectionModeE" title="nnp::Training::SelectionMode">SelectionMode</a>&gt; <code class="descname">selectionModeSchedule</code><a class="headerlink" href="#_CPPv4N3nnp8Training21selectionModeScheduleE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Schedule for varying selection mode. </p>
+</dd></dl>
+
+</div>
+<dl class="class">
+<dt id="_CPPv4N3nnp8Training15UpdateCandidateE">
+<span id="_CPPv3N3nnp8Training15UpdateCandidateE"></span><span id="_CPPv2N3nnp8Training15UpdateCandidateE"></span><span id="nnp::Training::UpdateCandidate"></span><span class="target" id="structnnp_1_1Training_1_1UpdateCandidate"></span><em class="property">struct </em><code class="descname">UpdateCandidate</code><a class="headerlink" href="#_CPPv4N3nnp8Training15UpdateCandidateE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Contains location of one update candidate (energy or force). </p>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Functions</p>
+<dl class="function">
+<dt id="_CPPv4NK3nnp8Training15UpdateCandidateltERK15UpdateCandidate">
+<span id="_CPPv3NK3nnp8Training15UpdateCandidateltERK15UpdateCandidate"></span><span id="_CPPv2NK3nnp8Training15UpdateCandidateltERK15UpdateCandidate"></span><span id="nnp::Training::UpdateCandidate::lt-operator__UpdateCandidateCRC"></span><span class="target" id="structnnp_1_1Training_1_1UpdateCandidate_1aada495e12dc52d773712f003a02ec7db"></span>bool <code class="descname">operator&lt;</code><span class="sig-paren">(</span><a class="reference internal" href="#_CPPv4N3nnp8Training15UpdateCandidateE" title="nnp::Training::UpdateCandidate">UpdateCandidate</a> <em class="property">const</em> &amp;<em>rhs</em><span class="sig-paren">)</span> <em class="property">const</em><a class="headerlink" href="#_CPPv4NK3nnp8Training15UpdateCandidateltERK15UpdateCandidate" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Overload &lt; operator to sort in <em>descending</em> order. </p>
+</dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric">Public Members</p>
+<dl class="member">
+<dt id="_CPPv4N3nnp8Training15UpdateCandidate1sE">
+<span id="_CPPv3N3nnp8Training15UpdateCandidate1sE"></span><span id="_CPPv2N3nnp8Training15UpdateCandidate1sE"></span><span id="nnp::Training::UpdateCandidate::s__std::s"></span><span class="target" id="structnnp_1_1Training_1_1UpdateCandidate_1ad631306aff9f9e0bca74425d3ab9e5bc"></span>std::size_t <code class="descname">s</code><a class="headerlink" href="#_CPPv4N3nnp8Training15UpdateCandidate1sE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p><a class="reference internal" href="structnnp_1_1Structure.html#structnnp_1_1Structure"><span class="std std-ref">Structure</span></a> index. </p>
+</dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N3nnp8Training15UpdateCandidate1aE">
+<span id="_CPPv3N3nnp8Training15UpdateCandidate1aE"></span><span id="_CPPv2N3nnp8Training15UpdateCandidate1aE"></span><span id="nnp::Training::UpdateCandidate::a__std::s"></span><span class="target" id="structnnp_1_1Training_1_1UpdateCandidate_1a38352286993a1ab398323449c40f0a10"></span>std::size_t <code class="descname">a</code><a class="headerlink" href="#_CPPv4N3nnp8Training15UpdateCandidate1aE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p><a class="reference internal" href="structnnp_1_1Atom.html#structnnp_1_1Atom"><span class="std std-ref">Atom</span></a> index (only used for force candidates). </p>
+</dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N3nnp8Training15UpdateCandidate1cE">
+<span id="_CPPv3N3nnp8Training15UpdateCandidate1cE"></span><span id="_CPPv2N3nnp8Training15UpdateCandidate1cE"></span><span id="nnp::Training::UpdateCandidate::c__std::s"></span><span class="target" id="structnnp_1_1Training_1_1UpdateCandidate_1a6bbdc3fd01e620d5b5020331bde0d4df"></span>std::size_t <code class="descname">c</code><a class="headerlink" href="#_CPPv4N3nnp8Training15UpdateCandidate1cE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Component index (x,y,z -&gt; 0,1,2, only used for force candidates). </p>
+</dd></dl>
+
+<dl class="member">
+<dt id="_CPPv4N3nnp8Training15UpdateCandidate5errorE">
+<span id="_CPPv3N3nnp8Training15UpdateCandidate5errorE"></span><span id="_CPPv2N3nnp8Training15UpdateCandidate5errorE"></span><span id="nnp::Training::UpdateCandidate::error__double"></span><span class="target" id="structnnp_1_1Training_1_1UpdateCandidate_1a59ab964d029ae002653ce35b49a74b15"></span>double <code class="descname">error</code><a class="headerlink" href="#_CPPv4N3nnp8Training15UpdateCandidate5errorE" title="Permalink to this definition">¶</a><br /></dt>
+<dd><p>Absolute value of error with respect to reference value. </p>
+</dd></dl>
+
+</div>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="classnnp_1_1Updater.html" class="btn btn-neutral float-right" title="Class Updater" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="classnnp_1_1SymmetryFunctionWeightedRadial.html" class="btn btn-neutral float-left" title="Class SymmetryFunctionWeightedRadial" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Andreas Singraber
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

@@ -1,0 +1,13 @@
+<map id="nnp::SymmetryFunctionGroupAngularNarrow::addMember" name="nnp::SymmetryFunctionGroupAngularNarrow::addMember">
+<area shape="rect" id="node2" href="$a00024.html#a500f98263000cafc17c1a0f27626c924" title="Get private convLength member variable. " alt="" coords="271,5,433,47"/>
+<area shape="rect" id="node3" href="$a00024.html#abf0c89b2d806c67011ea6576586245d0" title="Get private cutoffAlpha member variable. " alt="" coords="271,71,433,112"/>
+<area shape="rect" id="node4" href="$a00024.html#a07b586fcaf212615668a4221fcbc5a36" title="Get private cutoffType member variable. " alt="" coords="271,136,433,177"/>
+<area shape="rect" id="node5" href="$a00025.html#aa8967d09219ba1fb988b6ab4fcfa16bf" title="Get private e1 member variable. " alt="" coords="249,201,455,243"/>
+<area shape="rect" id="node6" href="$a00025.html#a23fe814fdfd1bfdf830a2056eb0c4576" title="Get private e2 member variable. " alt="" coords="249,267,455,308"/>
+<area shape="rect" id="node7" href="$a00024.html#a5582043d824576beb97699b3496ca14e" title="Get private ec member variable. " alt="" coords="271,332,433,373"/>
+<area shape="rect" id="node8" href="$a00024.html#aa0b1168f6862bec14da137b635c3ab8f" title="Get private rc member variable. " alt="" coords="271,397,433,439"/>
+<area shape="rect" id="node9" href="$a00024.html#a13b9e7a060f6497f3b3498a38f840a51" title="Get private type member variable. " alt="" coords="271,463,433,504"/>
+<area shape="rect" id="node10" href="$a00004.html#a6c7e681af3177f922e80f6896b210f26" title="Set parameter for polynomial cutoff function (CT_POLY). " alt="" coords="280,528,424,569"/>
+<area shape="rect" id="node11" href="$a00004.html#afc4ce48d3fe6450efb47ed3e2c1de239" title="Set cutoff radius. " alt="" coords="283,593,421,635"/>
+<area shape="rect" id="node12" href="$a00004.html#aa1f346f37b24b88ca7cd9846bdae30bf" title="Set cutoff type. " alt="" coords="283,659,421,700"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="nnp::Dataset::combineFiles" name="nnp::Dataset::combineFiles">
+<area shape="rect" id="node2" href="$a00037.html#a601b23e841bd853ee5d623401867762b" title="Calculate RMSE for all structures. " alt="" coords="236,5,428,32"/>
+<area shape="rect" id="node3" href="$a00041.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="307,56,357,83"/>
+<area shape="rect" id="node4" href="$a00037.html#af4cbb8263eeb79634e06fc62dc4b359d" title="Write training and test set to separate files (train.data and test.data, same format as input..." alt="" coords="252,107,412,149"/>
+</map>

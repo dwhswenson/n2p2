@@ -1,0 +1,753 @@
+
+Full API
+--------
+
+
+Namespaces
+**********
+
+
+.. toctree::
+   :maxdepth: 5
+
+   namespace_Eigen.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   namespace_nnp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   namespace_std.rst
+
+Classes and Structs
+*******************
+
+
+.. toctree::
+   :maxdepth: 5
+
+   structnnp_1_1Atom.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   structnnp_1_1Atom_1_1Neighbor.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   structnnp_1_1NeuralNetwork_1_1Layer.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   structnnp_1_1NeuralNetwork_1_1Neuron.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   structnnp_1_1Structure.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   structnnp_1_1SymmetryFunctionStatistics_1_1Container.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   structnnp_1_1Training_1_1UpdateCandidate.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   structnnp_1_1Vec3D.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   classnnp_1_1CutoffFunction.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   classnnp_1_1Dataset.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   classnnp_1_1Element.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   classnnp_1_1ElementMap.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   classnnp_1_1GradientDescent.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   classnnp_1_1InterfaceLammps.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   classnnp_1_1KalmanFilter.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   classnnp_1_1Log.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   classnnp_1_1Mode.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   classnnp_1_1NeuralNetwork.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   classnnp_1_1Prediction.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   classnnp_1_1Settings.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   classnnp_1_1SetupAnalysis.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   classnnp_1_1Stopwatch.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   classnnp_1_1SymmetryFunction.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   classnnp_1_1SymmetryFunctionAngularNarrow.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   classnnp_1_1SymmetryFunctionAngularWide.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   classnnp_1_1SymmetryFunctionGroup.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   classnnp_1_1SymmetryFunctionGroupAngularNarrow.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   classnnp_1_1SymmetryFunctionGroupAngularWide.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   classnnp_1_1SymmetryFunctionGroupRadial.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   classnnp_1_1SymmetryFunctionGroupWeightedAngular.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   classnnp_1_1SymmetryFunctionGroupWeightedRadial.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   classnnp_1_1SymmetryFunctionRadial.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   classnnp_1_1SymmetryFunctionStatistics.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   classnnp_1_1SymmetryFunctionWeightedAngular.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   classnnp_1_1SymmetryFunctionWeightedRadial.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   classnnp_1_1Training.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   classnnp_1_1Updater.rst
+
+Functions
+*********
+
+
+.. toctree::
+   :maxdepth: 5
+
+   function_Settings_8cpp_1ab3acc0914dc4194db93bc0cf640a1736.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   function_namespacennp_1a922944f33e09f55769b9834251be1b0c.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   function_namespacennp_1a0ae30152be7ac9fbb4a595fd586eef7a.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   function_namespacennp_1aeed037cd4a793db2c1b490e6607c0866.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   function_namespacennp_1a9a01beaa989d3578f213a32be1283f76.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   function_namespacennp_1ac861b7fcd089a4cbaea63589dd8ac69e.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   function_namespacennp_1a9d1bbacf408dac7e040ce679791bc570.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   function_namespacennp_1a19176ce6666d1e49a5f2cb4225ea81bd.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   function_namespacennp_1a5d65048b293d0abbd6c77a3f0365ea6a.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   function_namespacennp_1aa351f31ce77706c4a47f54dd018fb11f.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   function_namespacennp_1a0fca5b1d14fc5cf58d0503812ace7542.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   function_namespacennp_1aa41946cc03a845d677b7ec47c11edf17.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   function_namespacennp_1aa9f1f4126ca847a2d5a060772f6d4cb6.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   function_namespacennp_1ae895f68792de93c081ef2d568ae3358e.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   function_namespacennp_1a1589c883b03419579131181b3337f531.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   function_namespacennp_1add3921642f5fb87032bc304d36bb64b3.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   function_namespacennp_1ada65ef67cb7629b84a020f617a216273.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   function_namespacennp_1ac4dd8c6de17f9509eabaed0f143e95ea.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   function_namespacennp_1a2ff24ba46c3483a627415c731fcb656a.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   function_namespacennp_1a355b6ae0b4e3495fa9461cb59e22fa76.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   function_namespacennp_1a63742bb398a42070e489b7c465952126.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   function_namespacennp_1aff9a8e47c2005881a88261682b35a3ee.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   function_namespacennp_1a398f0bcafb57e99ba1581c4b8f8a7f76.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   function_namespacennp_1a6a3c96fac1f80064cea00a2688e5287b.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   function_namespacennp_1ad6bb227686863143131c4f6f30abe012.rst
+
+Defines
+*******
+
+
+.. toctree::
+   :maxdepth: 5
+
+   define_libnnpif_2mpi-extra_8h_1aaae430420e25984e327a89b068e1582b.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   define_libnnptrain_2mpi-extra_8h_1aaae430420e25984e327a89b068e1582b.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   define_version_8h_1a38dab5423f1c93cd2dc3b8079fd88895.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   define_version_8h_1a4ea9d7ff8f854998b863f71a670e6d2d.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   define_version_8h_1a85d9a234f54dd66fb4b3e9e281188996.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   define_version_8h_1aaf49e9de66a3e2c3e71ab3d928deac71.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   define_Stopwatch_8h_1a5d391b49011fbb7fed985e90557b1b79.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   define_utility_8cpp_1a6a9b23aa79b884aa301ad87a43bfbd96.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   define_InterfaceLammps_8cpp_1ae888242d7f1a9f14ab3f2c97b3c616c3.rst
+
+Directories
+***********
+
+
+.. toctree::
+   :maxdepth: 5
+
+   dir__home_travis_build_CompPhysVienna_n2p2_src_libnnp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   dir__home_travis_build_CompPhysVienna_n2p2_src_libnnpif.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   dir__home_travis_build_CompPhysVienna_n2p2_src_libnnptrain.rst
+
+Files
+*****
+
+
+.. toctree::
+   :maxdepth: 5
+
+   file__home_travis_build_CompPhysVienna_n2p2_src_libnnp_Atom.cpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file__home_travis_build_CompPhysVienna_n2p2_src_libnnp_Atom.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file__home_travis_build_CompPhysVienna_n2p2_src_libnnp_CutoffFunction.cpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file__home_travis_build_CompPhysVienna_n2p2_src_libnnp_CutoffFunction.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file__home_travis_build_CompPhysVienna_n2p2_src_libnnptrain_Dataset.cpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file__home_travis_build_CompPhysVienna_n2p2_src_libnnptrain_Dataset.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file__home_travis_build_CompPhysVienna_n2p2_src_libnnp_Element.cpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file__home_travis_build_CompPhysVienna_n2p2_src_libnnp_Element.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file__home_travis_build_CompPhysVienna_n2p2_src_libnnp_ElementMap.cpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file__home_travis_build_CompPhysVienna_n2p2_src_libnnp_ElementMap.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file__home_travis_build_CompPhysVienna_n2p2_src_libnnptrain_GradientDescent.cpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file__home_travis_build_CompPhysVienna_n2p2_src_libnnptrain_GradientDescent.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file__home_travis_build_CompPhysVienna_n2p2_src_libnnpif_InterfaceLammps.cpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file__home_travis_build_CompPhysVienna_n2p2_src_libnnpif_InterfaceLammps.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file__home_travis_build_CompPhysVienna_n2p2_src_libnnptrain_KalmanFilter.cpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file__home_travis_build_CompPhysVienna_n2p2_src_libnnptrain_KalmanFilter.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file__home_travis_build_CompPhysVienna_n2p2_src_libnnp_Log.cpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file__home_travis_build_CompPhysVienna_n2p2_src_libnnp_Log.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file__home_travis_build_CompPhysVienna_n2p2_src_libnnp_Mode.cpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file__home_travis_build_CompPhysVienna_n2p2_src_libnnp_Mode.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file__home_travis_build_CompPhysVienna_n2p2_src_libnnpif_mpi-extra.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file__home_travis_build_CompPhysVienna_n2p2_src_libnnptrain_mpi-extra.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file__home_travis_build_CompPhysVienna_n2p2_src_libnnp_NeuralNetwork.cpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file__home_travis_build_CompPhysVienna_n2p2_src_libnnp_NeuralNetwork.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file__home_travis_build_CompPhysVienna_n2p2_src_libnnp_Prediction.cpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file__home_travis_build_CompPhysVienna_n2p2_src_libnnp_Prediction.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file__home_travis_build_CompPhysVienna_n2p2_src_libnnp_Settings.cpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file__home_travis_build_CompPhysVienna_n2p2_src_libnnp_Settings.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file__home_travis_build_CompPhysVienna_n2p2_src_libnnp_SetupAnalysis.cpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file__home_travis_build_CompPhysVienna_n2p2_src_libnnp_SetupAnalysis.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file__home_travis_build_CompPhysVienna_n2p2_src_libnnp_Stopwatch.cpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file__home_travis_build_CompPhysVienna_n2p2_src_libnnp_Stopwatch.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file__home_travis_build_CompPhysVienna_n2p2_src_libnnp_Structure.cpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file__home_travis_build_CompPhysVienna_n2p2_src_libnnp_Structure.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file__home_travis_build_CompPhysVienna_n2p2_src_libnnp_SymmetryFunction.cpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file__home_travis_build_CompPhysVienna_n2p2_src_libnnp_SymmetryFunction.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file__home_travis_build_CompPhysVienna_n2p2_src_libnnp_SymmetryFunctionAngularNarrow.cpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file__home_travis_build_CompPhysVienna_n2p2_src_libnnp_SymmetryFunctionAngularNarrow.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file__home_travis_build_CompPhysVienna_n2p2_src_libnnp_SymmetryFunctionAngularWide.cpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file__home_travis_build_CompPhysVienna_n2p2_src_libnnp_SymmetryFunctionAngularWide.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file__home_travis_build_CompPhysVienna_n2p2_src_libnnp_SymmetryFunctionGroup.cpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file__home_travis_build_CompPhysVienna_n2p2_src_libnnp_SymmetryFunctionGroup.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file__home_travis_build_CompPhysVienna_n2p2_src_libnnp_SymmetryFunctionGroupAngularNarrow.cpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file__home_travis_build_CompPhysVienna_n2p2_src_libnnp_SymmetryFunctionGroupAngularNarrow.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file__home_travis_build_CompPhysVienna_n2p2_src_libnnp_SymmetryFunctionGroupAngularWide.cpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file__home_travis_build_CompPhysVienna_n2p2_src_libnnp_SymmetryFunctionGroupAngularWide.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file__home_travis_build_CompPhysVienna_n2p2_src_libnnp_SymmetryFunctionGroupRadial.cpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file__home_travis_build_CompPhysVienna_n2p2_src_libnnp_SymmetryFunctionGroupRadial.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file__home_travis_build_CompPhysVienna_n2p2_src_libnnp_SymmetryFunctionGroupWeightedAngular.cpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file__home_travis_build_CompPhysVienna_n2p2_src_libnnp_SymmetryFunctionGroupWeightedAngular.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file__home_travis_build_CompPhysVienna_n2p2_src_libnnp_SymmetryFunctionGroupWeightedRadial.cpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file__home_travis_build_CompPhysVienna_n2p2_src_libnnp_SymmetryFunctionGroupWeightedRadial.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file__home_travis_build_CompPhysVienna_n2p2_src_libnnp_SymmetryFunctionRadial.cpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file__home_travis_build_CompPhysVienna_n2p2_src_libnnp_SymmetryFunctionRadial.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file__home_travis_build_CompPhysVienna_n2p2_src_libnnp_SymmetryFunctionStatistics.cpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file__home_travis_build_CompPhysVienna_n2p2_src_libnnp_SymmetryFunctionStatistics.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file__home_travis_build_CompPhysVienna_n2p2_src_libnnp_SymmetryFunctionWeightedAngular.cpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file__home_travis_build_CompPhysVienna_n2p2_src_libnnp_SymmetryFunctionWeightedAngular.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file__home_travis_build_CompPhysVienna_n2p2_src_libnnp_SymmetryFunctionWeightedRadial.cpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file__home_travis_build_CompPhysVienna_n2p2_src_libnnp_SymmetryFunctionWeightedRadial.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file__home_travis_build_CompPhysVienna_n2p2_src_libnnptrain_Training.cpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file__home_travis_build_CompPhysVienna_n2p2_src_libnnptrain_Training.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file__home_travis_build_CompPhysVienna_n2p2_src_libnnptrain_Updater.cpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file__home_travis_build_CompPhysVienna_n2p2_src_libnnptrain_Updater.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file__home_travis_build_CompPhysVienna_n2p2_src_libnnp_utility.cpp.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file__home_travis_build_CompPhysVienna_n2p2_src_libnnp_utility.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file__home_travis_build_CompPhysVienna_n2p2_src_libnnp_Vec3D.h.rst
+
+.. toctree::
+   :maxdepth: 5
+
+   file__home_travis_build_CompPhysVienna_n2p2_src_libnnp_version.h.rst

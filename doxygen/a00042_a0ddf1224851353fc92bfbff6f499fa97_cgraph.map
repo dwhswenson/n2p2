@@ -1,0 +1,10 @@
+<map id="main" name="main">
+<area shape="rect" id="node2" href="$a00023.html#aaa794cf49a53d8e5db578ac303b700fd" title="Read configuration from file. " alt="" coords="111,5,299,32"/>
+<area shape="rect" id="node3" href="$a00007.html#a17d6d160054a064199a8757eb62b3350" title="Extract all elements and store in element map. " alt="" coords="118,57,293,98"/>
+<area shape="rect" id="node4" href="$a00012.html#a80b248cc27c7846814fb2915e198b71b" title="Register new C++ ofstream pointer. " alt="" coords="123,122,288,163"/>
+<area shape="rect" id="node5" href="$a00023.html#abf6bf40715b7ffd70707baf5e95746ce" title="Reset everything but elementMap. " alt="" coords="135,188,276,215"/>
+<area shape="rect" id="node6" href="$a00023.html#a57c375126ca37e8d390d406091e7dd5a" title="Set element map of structure. " alt="" coords="104,239,307,265"/>
+<area shape="rect" id="node7" href="$a00126.html#a398f0bcafb57e99ba1581c4b8f8a7f76" title="String version of printf function. " alt="" coords="355,348,432,375"/>
+<area shape="rect" id="node8" href="$a00023.html#a5d47c4d567c491880abec3c3246d3ed8" title="Write configuration to POSCAR file. " alt="" coords="117,341,293,382"/>
+<area shape="rect" id="node9" href="$a00023.html#a63a63178ca680d89c7908a8b2d9f7868" title="Write configuration to xyz file. " alt="" coords="106,407,305,433"/>
+</map>
